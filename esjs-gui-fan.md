@@ -24,10 +24,22 @@ import * as _ from 'lodash'
  import moment from 'moment'
  
  export default {
+   /**
+    * 获取当前时间戳
+    * @public
+    * @return {Number} 当前时间戳
+    */
    now() {
      return Date.now()
    },
    
+   /**
+    * 格式化时间
+    * @public
+    * @param {String|Number} dataTime 日期时间字符串或时间戳
+    * @param {String} [formatter='YYYY-MM-DD hh-mm-ss'] 格式
+    * @return {String} 返回格式化后的时间字符串
+    */
    format(dateTime, formatter='YYYY-MM-DD hh-mm-ss') {
      return moment(dateTime).format(formatter)
    }
