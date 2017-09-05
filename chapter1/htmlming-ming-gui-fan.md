@@ -49,4 +49,3 @@ Vue官方支持包括大驼峰、小驼峰、羊肉串等不同的写法，不�
   import ProductSelector from 'components/product-selector.vue'
 </script>
 ```
-```
