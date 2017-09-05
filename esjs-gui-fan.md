@@ -59,7 +59,6 @@ if (isArray(list) && isFunction(plus)) {
      return plus(item, 10)
  })
 }
-
 ```
 
 #### 1.4. 不常用的模块使用异步导入: import('moduleName').then(module=>{  })
