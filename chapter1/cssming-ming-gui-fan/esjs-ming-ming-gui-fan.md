@@ -8,7 +8,7 @@
    const API_HOST = ‘192.168.1.1’
 ```
 
-2.	变量使用小驼峰（camelCased） 
+#### 变量使用小驼峰（camelCased） 
 
 正确： 
 -	let onlineUsers = [‘张三’, ‘李四’] 
