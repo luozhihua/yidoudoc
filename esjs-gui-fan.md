@@ -135,6 +135,32 @@ export default {
 ```
 
 #### 3.2. 使用 npm 打包的项目统一使用 let 声明变量，禁止使用 var 声明变量
+
+***错误***
+```javascript
+export default function (list = []) {
+    var userNames = []
+    
+    for (var i = 0, len = list.length; i < len; i++) {
+        userNames.push(list.userName)
+    }
+    
+    return userNames
+}
+```
+***正确***
+```javascript
+export default function (list = []) {
+    let userNames = []
+    
+    for (let i = 0, len = list.length; i < len; i++) {
+        userNames.push(list.userName)
+    }
+    
+    return userNames
+}
+```
+
 #### 3.3. 变量声明全部放置在函数、方法的最前面
 #### 3.4. 变量声明后空一行
 
