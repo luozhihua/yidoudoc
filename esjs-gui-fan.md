@@ -56,7 +56,7 @@ let plus = function(a, b) { return a + b }
 
 if (isArray(list) && isFunction(plus)) {
  list.map((item, i) => {
-     return plus(item, 10)
+  return plus(item, 10)
  })
 }
 ```
