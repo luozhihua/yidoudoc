@@ -122,8 +122,8 @@ export default {
         
         getUsers() { 
             return [
-                {name:' 王路'}, 
-                {name:'小鱼人'}
+                {name: '王路'}, 
+                {name: '小鱼人'}
             ]; 
         },
         
