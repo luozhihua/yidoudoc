@@ -79,6 +79,7 @@ class UserCenter extend Event {
 ```
 
 **错误：**
+
 ```javascript
 class distribution {
     constructor(options) {
