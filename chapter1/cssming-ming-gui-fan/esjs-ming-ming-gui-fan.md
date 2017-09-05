@@ -150,18 +150,43 @@ class userCenter extend Event {
 
 变量（函数）、类和对象的方法等，如果类型或者返回类型是 Boolean 的，名称加 is或 can前缀，类型是 Array的加 s 后缀或者 List 后缀
 
-参考：
-function isNumber(foo) { return (typeof foo === 'number'); }
+***参考：***
+
+```javascript
+function isNumber(foo) { 
+    return (typeof foo === 'number'); 
+}
 
 export default {
-methods: {
-// 是否激活
-isActivated (o) { return true },
-
-// 是否可以删除
-canDelete() { return false },
-isCurrentTab() { return true }
-getUsers() { return [{name:' 王路'}, {name:'小鱼人'}]; },
-getOrderList() { return [{…}, {…}]; }
+    methods: {
+        
+        // 是否激活
+        isActivated (o) { 
+            return true 
+        },
+        
+        // 是否可以删除
+        canDelete() { 
+            return false 
+        },
+        
+        isCurrentTab() { 
+            return true 
+        },
+        
+        getUsers() { 
+            return [
+                {name: '王路'}, 
+                {name: '小鱼人'}
+            ]; 
+        },
+        
+        getOrderList() { 
+            return [
+                {…}, 
+                {…}
+            ]; 
+        }
+    }
 }
-}
+```
