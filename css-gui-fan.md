@@ -81,6 +81,7 @@ a. 在可以使用缩写的情况下，尽量使用属性缩写。
 ```
 
 ***不建议:***
+
 ```css
 .post {
     font-family: arial, sans-serif;
@@ -89,7 +90,7 @@ a. 在可以使用缩写的情况下，尽量使用属性缩写。
 }
 ```
 
-2.	使用 border / margin / padding 等缩写时，应注意隐含值对实际数值的影响，确实需要设置多个方向的值时才使用缩写。
+2.使用 border / margin / padding 等缩写时，应注意隐含值对实际数值的影响，确实需要设置多个方向的值时才使用缩写。
 border / margin / padding 等缩写会同时设置多个属性的值，容易覆盖不需要覆盖的设定。如某些方向需要继承其他声明的值，则应该分开设置。
 示例：
 <article class="page"></article>
