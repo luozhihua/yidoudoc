@@ -74,7 +74,7 @@ class Clue extend Event {
         this.createdByUser = '小鱼人'
     }
     
-    // 只读属性定义
+    // 只读属性
     get createdDate() { return this.data.createdDate }
     
     // 可修改属性
