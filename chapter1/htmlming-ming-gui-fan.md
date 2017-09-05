@@ -39,7 +39,7 @@
 <template>
   <div>
     <product-selector />   // <= 建议写法
-    <ProductSelector />   
+    <ProductSelector />    // <= 不建议
   </div>
 <template>
 
