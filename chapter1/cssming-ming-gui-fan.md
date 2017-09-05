@@ -48,7 +48,7 @@
 
 #### 4. Class Name  根据不同类型使用容易理解的名称，
 
-1. **表示状态尽量使用形容词或时态动词，比如：complete（已完成 ），loading( 正在加载)**
+1. **表示状态尽量使用形容词或时态动词**，比如：complete（已完成 ），loading( 正在加载)
 
     *** 正确：***
     
@@ -64,7 +64,7 @@
     <button class=”show-load-bar”>正在保存…</button>
     ```
         
-2. **表示动作和交互的按钮、链接尽量使用动词或名词+动词，如 btn-submit( 提交)；公共的含有动作交互类样式可以使用名词或形容词，如 btn-success、btn-primary**
+2. **表示动作和交互的按钮、链接尽量使用动词或名词+动词**，如 btn-submit( 提交)；公共的含有动作交互类样式可以使用名词或形容词，如 btn-success、btn-primary
 
     *** 正确：***
     
@@ -97,4 +97,4 @@
     <button class=”btn-submit”>提交</button>
     ```
 
-3. **其他尽量用名词，如：title、main、list、wrapper、navigator(nav)、menu 等，常见 CSS 命名参考文档最后的附件**
+3. **其他尽量用名词**，如：title、main、list、wrapper、navigator(nav)、menu 等，常见 CSS 命名参考文档最后的附件
