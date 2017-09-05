@@ -52,8 +52,9 @@
 
         *** 正确：***
         
-        ```<li class=”current”> 当前 Tab 头</li>
-        	<button class=”loading”>正在保存…</li>
+        ```html
+        <li class=”current”> 当前 Tab 头</li>
+        <button class=”loading”>正在保存…</button>
         
         错误：
          
