@@ -10,7 +10,7 @@ export default function(){}
 export default class Distributor() {}
 ```
 
-#### 1.2. 一个文件只写一个模块
+#### 1.2. 一个文件只写一个模块2
 
 #### 1.3. 仅仅import当前模块所需要的方法和对象
 
