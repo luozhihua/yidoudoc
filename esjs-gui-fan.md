@@ -8,6 +8,11 @@ export default {}
 export default []
 export default function(){}
 export default class Distributor() {}
+export default class Distributor extend Event() {}
+
+import moment from 'moment'
+import {isArray, isFunction} from 'lodash'
+import * as _ from 'lodash'
 ```
 
 #### 1.2. 一个文件只写一个模块
