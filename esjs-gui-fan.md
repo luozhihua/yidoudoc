@@ -101,6 +101,9 @@ export default function () {
 
 ## 3. 变量
 #### 3.1. 所有变量必须先声明，后使用
+
+***错误****
+
 ```javascript
 export default {
     async loadData() {
@@ -113,6 +116,23 @@ export default {
             })
     }
 }
+```
+
+***正确****
+
+```javascript
+export default {
+    async loadData() {
+        let url = 'https://www.yidouinc.com/api/v2.0/auth'
+        let parmas = {username: 'colin', password: '123456'}
+        
+        axios.post(url, params)
+            .then((response)=>{
+                console.log(response)
+            })
+    }
+}
+```
 
 #### 3.2. 使用 npm 打包的项目统一使用 let 声明变量，禁止使用 var 声明变量
 #### 3.3. 变量声明全部放置在函数、方法的最前面
