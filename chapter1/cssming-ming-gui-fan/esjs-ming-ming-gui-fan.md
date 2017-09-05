@@ -86,18 +86,23 @@ class Clue extend Event {
 **错误：**
 
 ```javascript
-function get_all_users() {
-    return []
+const user = {
+    lastLogin: '12313132134213',
+    nickName: '乔峰'
 }
 
-function GetAllUsers() {
-    return []
-}
+class Clue extend Event {
 
-const list = {
-    is_exists() {
-        return true
+    constructor(clueId) {
+        this.createdByUser = '小鱼人'
     }
+    
+    // 只读属性
+    get createdDate() { return this.data.createdDate }
+    
+    // 可修改属性
+    get updateDate() { return this.data.updateDate }
+    set updateDate(datetime) { this.data.updateDate = datetime }
 }
 ```
 
