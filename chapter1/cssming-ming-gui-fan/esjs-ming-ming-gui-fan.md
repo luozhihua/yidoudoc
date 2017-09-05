@@ -146,7 +146,7 @@ class userCenter extend Event {
 }
 ```
 
-## 6.变量、方法、属性前缀
+## 6.变量、方法、属性修饰
 
 变量（函数）、类和对象的方法等，如果类型或者返回类型是 Boolean 的，名称加 is或 can前缀，类型是 Array的加 s 后缀或者 List 后缀
 
