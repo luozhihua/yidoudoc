@@ -74,13 +74,12 @@ class Clue extend Event {
         this.createdByUser = '小鱼人'
     }
     
-    // 属性定义
+    // 只读属性定义
     get createdDate() { return this.data.createdDate }
-    set createdDate(datetime) { this.data.createdDate = datetime }
-
     
-    
-    
+    // 可修改属性
+    get updateDate() { return this.data.updateDate }
+    set updateDate(datetime) { this.data.updateDate = datetime }
 }
 ```
 
