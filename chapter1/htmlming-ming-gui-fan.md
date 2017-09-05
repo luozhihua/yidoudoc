@@ -47,3 +47,4 @@
   import ProductSelector from 'components/product-selector.vue'
 </script>
 ```
+```
