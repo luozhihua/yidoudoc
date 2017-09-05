@@ -97,4 +97,4 @@
     <button class=”btn-submit”>提交</button>
     ```
 
-3. 其他尽量用名词，如：title、main、list、wrapper、navigator(nav)、menu 等，常见 CSS 命名参考文档最后的附件
+3. **其他尽量用名词，如：title、main、list、wrapper、navigator(nav)、menu 等，常见 CSS 命名参考文档最后的附件**
