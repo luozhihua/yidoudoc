@@ -48,6 +48,20 @@ import * as _ from 'lodash'
 
 #### 1.3. 仅仅import当前模块所需要的方法和对象
 
+```javascript
+import {isArray, isFunction} from 'lodash'
+
+let list = [1, 2, 3]
+let plus = function(a, b) { return a + b }
+
+if (isArray(list) && isFunction(plus)) {
+ list.map((item, i) => {
+     return plus(item, 10)
+ })
+}
+
+```
+
 #### 1.4. 不常用的模块使用异步导入: import('moduleName').then(module=>{  })
 
 ## 2. 常量
