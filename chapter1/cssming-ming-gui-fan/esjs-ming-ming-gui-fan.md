@@ -74,8 +74,11 @@ class Clue extend Event {
         console.log(clueId)
     }
     
-    //
-    get title() { return this. }
+    // 属性定义
+    get createdDate() { return this.data.createdDate }
+    set createdDate(datetime) { this.data.createdDate = datetime }
+
+    
     
     
 }
