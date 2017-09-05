@@ -98,11 +98,11 @@ class Clue extend Event {
     }
     
     // 只读属性
-    get createdDate() { return this.data.createdDate }
+    get CreatedDate() { return this.data.createdDate }
     
     // 可修改属性
-    get updateDate() { return this.data.updateDate }
-    set updateDate(datetime) { this.data.updateDate = datetime }
+    get update_date() { return this.data.updateDate }
+    set update_date(datetime) { this.data.updateDate = datetime }
 }
 ```
 
