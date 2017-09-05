@@ -44,6 +44,6 @@
 <template>
 
 <script>
-  import ProductSelector from ‘components/product-selector.vue’
+  import ProductSelector from 'components/product-selector.vue'
 </script>
 ```
