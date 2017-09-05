@@ -154,7 +154,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </form>
 ```
 
-#### 禁止在 tr/td/dl/li 等用于展示 list 的元素 上设置ID
+#### 9. 禁止在 tr/td/dl/li 等用于展示 list 的元素 上设置ID
 
 这些元素大部门情况下会用于 JS循环渲染Array或 Map 结构的数据，很容易导致页面中出现含有相同ID 的元素，如果交互操作依赖这些相同的 ID会导致结果不符合预期；
 
@@ -193,7 +193,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </template>
 ```
 
-#### Vue 模板中使用v-for的元素必须设置 :key 属性
+#### 10. Vue 模板中使用v-for的元素必须设置 :key 属性
 
 请参考 [Vue官方介绍](https://cn.vuejs.org/v2/api/#key)
  
