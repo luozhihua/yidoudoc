@@ -1,3 +1,6 @@
-# My Awesome Book
+# 一豆信息（上海）前端代码编写规范
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+- Version: v1.0
+- Author:  罗志华
+- 撰写日期：2017年9月
+
