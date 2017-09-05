@@ -105,18 +105,23 @@ article {
 }
 </style>
 ```
-正确：
+
+***正确：***
+```css
 .page { 
-margin-right: auto; 
-margin-left: auto; 
+    margin-right: auto; 
+    margin-left: auto; 
 }
 .featured { border-color: #69c; }
+```
 
-错误：
+***错误：***
+```css
 .page { margin: 5px auto; }
 .featured { border: 1px solid #69c; }
+```
 
-每个规则集之间保留一个空行
+#### 5. 每个规则集之间保留一个空行
 
 正确：
 .selector1 {  display: block; width: 100px; }
