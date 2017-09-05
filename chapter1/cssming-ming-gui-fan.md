@@ -1,6 +1,6 @@
 # CSS  命名规范
 
-#### 1. class name统一使用羊肉串写法
+## 1. class name统一使用羊肉串写法
 
 *** 正确：*** 
 ```html
@@ -16,7 +16,7 @@
 </ul>
 ```
 
-#### 2. ID 统一使用羊肉串写法，尽量使用名词，按钮或有交互的节点 ID可以使用动词
+## 2. ID 统一使用羊肉串写法，尽量使用名词，按钮或有交互的节点 ID可以使用动词
 
 *** 正确：*** 
 ```html
@@ -26,7 +26,7 @@
 ```html
 <button id=”btnAddProduct”></button>```
 
-#### 3. DOM 节点的状态单独分离
+## 3. DOM 节点的状态单独分离
 
 能用 CSS 伪类实现的尽量用伪类实现，常见的状态：hover、focus、active、disabled、checked、hidden、visible、current，不要用类似 gray 表示disabled状态、blue表示current状态
 
@@ -46,7 +46,7 @@
 </style>
 ```
 
-#### 4. Class Name  根据不同类型使用容易理解的名称，
+## 4. Class Name  根据不同类型使用容易理解的名称，
 
 1. **表示状态尽量使用形容词或时态动词**，比如：complete（已完成 ），loading( 正在加载)
 
