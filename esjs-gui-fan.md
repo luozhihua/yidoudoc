@@ -2,11 +2,12 @@
 
 ## 1. 模块化
 #### 1.1. 使用 ES6  模块机制，import、export;
+
 ```javascript
-    export default {}
-    export default []
-    export default function(){}
-    export default class Distributor() {}
+export default {}
+export default []
+export default function(){}
+export default class Distributor() {}
 ```
 
 #### 1.2. 一个文件只写一个模块
