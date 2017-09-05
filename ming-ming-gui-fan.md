@@ -17,12 +17,12 @@ if ((this.posibleClues.filter.orderType == 7 && this.posibleClues.list.length > 
 *** 正确：***
 
 ```javascript
-let possible = this. posibleClues
-let type = possible.filter.orderType
-let list = possible.list 
-let clueList = possible.clueList
+let clue = this. posibleClues
+let type = clue.orderType
+let list = clue.list 
+let userList = clue.userList
 
-if ((type === 7 && list.length > 0) || (type === 3 && clueList.length > 0)) {
+if ((type === 7 && list.length > 0) || (type === 3 && userList.length > 0)) {
       return
 }
 ```
