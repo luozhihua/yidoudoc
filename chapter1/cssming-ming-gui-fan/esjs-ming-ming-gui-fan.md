@@ -58,7 +58,48 @@ const list = {
 }
 ```
 
-#### 4. 对象和类的属性名称统一使用小驼峰（camelCased），参考前一条
+#### 4. 对象和类的属性名称统一使用小驼峰（camelCased）
+
+**正确：**
+
+```javascript
+const user = {
+    lastLogin: '12313132134213',
+    nickName: '乔峰'
+}
+
+class Clue extend Event {
+
+    constructor(clueId) {
+        console.log(clueId)
+    }
+    
+    //
+    get title() { return this. }
+    
+    
+}
+```
+
+**错误：**
+
+```javascript
+function get_all_users() {
+    return []
+}
+
+function GetAllUsers() {
+    return []
+}
+
+const list = {
+    is_exists() {
+        return true
+    }
+}
+```
+
+
 
 #### 5. 类名使用大驼峰（CamelCased）
 
