@@ -87,8 +87,8 @@ class Clue extend Event {
 
 ```javascript
 const user = {
-    lastLogin: '12313132134213',
-    nickName: '乔峰'
+    LastLogin: '12313132134213',
+    _nick_name: '乔峰'
 }
 
 class Clue extend Event {
