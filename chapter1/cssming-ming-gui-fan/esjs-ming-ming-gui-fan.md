@@ -1,6 +1,6 @@
 #ES/JS 命名规范
 
-#### 常量统一使用全大写，单词之间使用下划线连接，CONSTACT_NAME
+#### 1. 常量统一使用全大写，单词之间使用下划线连接，CONSTACT_NAME
 
 **实例：**
 
@@ -8,7 +8,7 @@
 const API_HOST = '192.168.1.1'
 ```
 
-#### 变量使用小驼峰（camelCased）
+#### 2. 变量使用小驼峰（camelCased）
 
 **正确： **
 
@@ -24,7 +24,7 @@ let OnlineUser = ['张三', '李四']
 let online_user_list = ['张三', '李四']
 ```
 
-#### 函数名、对象和类的方法名统一使用小驼峰（camelCased）
+#### 3. 函数名、对象和类的方法名统一使用小驼峰（camelCased）
 
 **正确：**
 
@@ -58,9 +58,9 @@ const list = {
 }
 ```
 
-#### 对象和类的属性名称统一使用小驼峰（camelCased），参考前一条
+#### 4. 对象和类的属性名称统一使用小驼峰（camelCased），参考前一条
 
-#### 类名使用大驼峰（CamelCased）
+#### 5. 类名使用大驼峰（CamelCased）
 
 **正确：**
 ```javascript
