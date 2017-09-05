@@ -55,13 +55,23 @@ let list = [1, 2, 3]
 let plus = function(a, b) { return a + b }
 
 if (isArray(list) && isFunction(plus)) {
- list.map((item, i) => {
-  return plus(item, 10)
- })
+    list.map((item, i) => {
+        return plus(item, 10)
+    })
 }
 ```
 
-#### 1.4. 不常用的模块使用异步导入: import('moduleName').then(module=>{  })
+#### 1.4. 不常用的模块使用异步导入
+```javascript
+
+import('lodash').then(lodash => { 
+    let isArr = lodash.isArray([1, 2, 3])
+    
+    console.log(isArr)
+})
+
+```
+
 
 ## 2. 常量
 #### 2.1. 使用 ES6 的 const 关键字声明常量，名称全大写
