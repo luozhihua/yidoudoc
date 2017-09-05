@@ -109,7 +109,7 @@ export default {
         
         axios.post(url, params)
             .then((response)=>{
-                console.log(response.status)
+                console.log(response)
             })
     }
 }
