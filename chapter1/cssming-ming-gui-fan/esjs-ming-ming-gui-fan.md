@@ -71,7 +71,6 @@ const user = {
 class Clue extend Event {
 
     constructor(clueId) {
-        
         this.createdByUser = '小鱼人'
     }
     
