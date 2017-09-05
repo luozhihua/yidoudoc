@@ -20,8 +20,9 @@ if ((this.posibleClues.filter.orderType == 7 && this.posibleClues.list.length > 
 let possible = this. posibleClues
 let type = possible.filter.orderType
 let list = possible.list 
-let list1 = possible.list1
-if ((type === 7 && list.length > 0) || (type === 3 && list1.length > 0)) {
+let clueList = possible.clueList
+
+if ((type === 7 && list.length > 0) || (type === 3 && clueList.length > 0)) {
       return
 }
 ```
