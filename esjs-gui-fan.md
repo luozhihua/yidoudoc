@@ -75,7 +75,29 @@ import('lodash').then(lodash => {
 
 ## 2. 常量
 #### 2.1. 使用 ES6 的 const 关键字声明常量，名称全大写
-#### 2.2. 声明在文件或模块的最上方
+```javascript
+const API_HOST = '127.0.0.1'
+const API_PORT = '8080'
+```
+#### 2.2. 声明在文件、模块或代码块的最上方(如果有 import则在 import下方声明)
+```javascript
+import {isPlainObject} from 'lodash'
+
+// 在 import后面声明常量
+const USER_MODEL = {...}
+```
+
+```javascript
+export default function () {
+    // 在代码块的最前面声明常量（const下方空一行）
+    const INTERVAL_TIME = 3000
+    const USER_ID = 'akdf3h-fndnj-askdjal2312erflkeja9'
+    
+    setTimeout(()=>{
+        console.log(Date.now())
+    })
+}
+```
 
 ## 3. 变量
 #### 3.1. 所有变量必须先声明，后使用
