@@ -193,6 +193,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </template>
 ```
 
-Vue 模板中使用v-for的元素必须设置 :key 属性
-请参考 Vue官方介绍（ 截图如下）：
+#### Vue 模板中使用v-for的元素必须设置 :key 属性
+
+请参考 [Vue官方介绍](https://cn.vuejs.org/v2/api/#key)
  
