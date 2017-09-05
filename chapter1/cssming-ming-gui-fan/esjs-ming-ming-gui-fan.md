@@ -88,13 +88,13 @@ class Clue extend Event {
 ```javascript
 const user = {
     LastLogin: '12313132134213',
-    _nick_name: '乔峰'
+    nick_name: '乔峰'
 }
 
 class Clue extend Event {
 
     constructor(clueId) {
-        this.createdByUser = '小鱼人'
+        this._createdByUser = '小鱼人'
     }
     
     // 只读属性
