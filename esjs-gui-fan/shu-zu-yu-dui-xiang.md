@@ -40,7 +40,7 @@ list.forEach((item, i)=>{
 })
 ```
 
-#### ES6中读取对象属性建议使用 Object.keys
+#### ES6中读取对象属性建议使用 Object.keys()
 
 ```javascript
 let params = {
@@ -54,3 +54,14 @@ let keys = Object.keys(params) // => ['userId', 'userName', 'password']
 Object.keys(params).forEach(key => {
     console.log(params[key])
 })
+```
+
+#### ES6 中 对象的方法可以省略 function 关键字
+
+```javascript
+const utils = {
+    format: function() {
+        
+    } 
+}
+```
