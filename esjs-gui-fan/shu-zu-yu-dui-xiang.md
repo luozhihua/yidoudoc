@@ -1,6 +1,6 @@
 #数组与对象
 
-##### 禁止使用`new`关键字创建空数组和空对象
+##### 1. 禁止使用`new`关键字创建空数组和空对象
 
 ***错误***
 
@@ -18,7 +18,7 @@ let params = {}
 
 ```
 
-#### ES6中数组循环请使用 foreach
+#### 2. ES6中数组循环请使用 foreach
 
 ***不推荐***
 
@@ -40,7 +40,7 @@ list.forEach((item, i)=>{
 })
 ```
 
-#### 字面对象的每一个属性占一行
+#### 3. 字面对象的每一个属性占一行
 
 ***错误***
 ```javascript
@@ -61,7 +61,7 @@ let params = {
 
 ```
 
-#### ES6中读取对象属性建议使用 Object.keys()
+#### 4. ES6中读取对象属性建议使用 Object.keys()
 
 ```javascript
 let params = {
@@ -77,7 +77,7 @@ Object.keys(params).forEach(key => {
 })
 ```
 
-#### ES6 中 对象的方法可以省略 function 关键字
+#### 5. ES6 中 对象的方法可以省略 function 关键字
 
 ***不推荐***
 
