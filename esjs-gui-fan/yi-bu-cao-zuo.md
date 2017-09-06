@@ -30,10 +30,11 @@ async function load() {
 export default {
   methods: {
     async loadProducts() {
+      let url = '/api/xxxx'
       let response
       
       try {
-        response = await this.$ajax.get(this.url)
+        response = await this.$ajax.get(url)
         
         this.prosucts = response.data
       } catch (error) {
