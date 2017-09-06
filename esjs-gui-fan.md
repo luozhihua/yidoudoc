@@ -256,11 +256,71 @@ let difference = product[0].price - product[1].price
 
 ***错误***
 ```javascript
-if (typeof window.console === 'undefined') {
-    console.log()
+if(typeof window.console !== 'undefined'){
+    console.log(1)
+}else{
+    alert(2)
 }
 
+switch(user.gender){
+    case 'male':
+        console.log('我是男人')
+        break
+        
+    case 'female':
+        console.log('我不是男人')
+        break
+        
+    default:
+        console.log('我也不知道自己是不是男人')
+}
+
+function loadData(){
+    this.$ajax.get('/api/xxx')
+}
+
+const loadData = function(){
+    this.$ajax.get('/api/xxx')
+}
+
+class Analysis{
+    constructor() {...}
+}
+```
 
 ***正确***
+
+```javascript
+if (typeof window.console !== 'undefined') {
+    console.log(1)
+} else {
+    alert(2)
+}
+
+switch (user.gender) {
+    case 'male':
+        console.log('我是男人')
+        break
+        
+    case 'female':
+        console.log('我不是男人')
+        break
+        
+    default:
+        console.log('我也不知道自己是不是男人')
+}
+
+function loadData() {
+    this.$ajax.get('/api/xxx')
+}
+
+const loadData = function () {
+    this.$ajax.get('/api/xxx')
+}
+
+class Analysis {
+    constructor() {...}
+}
+```
 
 #### 4.3. 函数和方法的参数之间必须留空格	
