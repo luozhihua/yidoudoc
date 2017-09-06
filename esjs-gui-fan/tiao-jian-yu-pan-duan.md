@@ -17,7 +17,7 @@ if (bar == false) {
     console.log('bar is true')
 }
 
-let bat = false
+let bat = []
 if (bat == null) {
     console.log('bat is null')
 } else {
