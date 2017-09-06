@@ -161,7 +161,40 @@ export default function (list = []) {
 }
 ```
 
-#### 3.3. 变量声明全部放置在函数、方法的最前面
+#### 3.3. 变量声明全部放置在函数、方法的最前面, 变量块后空一行
+***错误***
+```javascript
+export default class Customer extend Event () {
+    constructor(id) {
+        this.customerId = id
+        this.load()
+    }
+    
+    async load() {
+        let id = this.customerId
+        let url = `/api/customer/details/${id}`
+        let data = await this.$ajax.get(url)
+        
+        this.customeName = data.name
+        this.logo = data.imgUrl
+    }
+}
+```
+***正确***
+```javascript
+export default function (list = []) {
+    let userNames = []
+    
+    for (let i = 0, len = list.length; i < len; i++) {
+        userNames.push(list.userName)
+    }
+    
+    return userNames
+}
+```
+
+
+
 #### 3.4. 变量声明后空一行
 
 ## 4. 空格
