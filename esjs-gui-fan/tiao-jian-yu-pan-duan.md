@@ -108,6 +108,7 @@ if (user.active) {
 #### 禁止在 if 语句内执行表达式
 
 ***错误***
+
 ```javascript```
 let foo
 let bar = true
@@ -121,6 +122,7 @@ if (foo = list.length && bar) {
 ```
 
 ***正确***
+
 ```javascript
 let foo
 let bar = true
