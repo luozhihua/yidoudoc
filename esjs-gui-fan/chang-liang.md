@@ -94,11 +94,6 @@ export default function (list = []) {
 ***错误***
 ```javascript
 export default class Customer extend Event () {
-    constructor(id) {
-        this.customerId = id
-        this.load()
-    }
-    
     async load() {
         let id = this.customerId
         let url = '/api/customer/details/'
@@ -120,11 +115,6 @@ export default class Customer extend Event () {
 
 ```javascript
 export default class Customer extend Event () {
-    constructor(id) {
-        super()
-        this.customerId = id
-        this.load()
-    }
     async load() {
         let id = this.customerId
         let url = `/api/customer/details/${id}`
@@ -140,7 +130,6 @@ export default class Customer extend Event () {
         this.logo = data.imgUrl
     }
 }
-
 ```
 
 #### 2.4. 变量声明后空一行
