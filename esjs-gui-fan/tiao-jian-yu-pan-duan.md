@@ -33,11 +33,11 @@ if (baz == false) {
 ```
 
 
-***错误***
+***正确***
 
 ```javascript
 let foo = '1'
-if (foo === 1) {
+if (foo.toString() === 1) {
     ...
 }
 
