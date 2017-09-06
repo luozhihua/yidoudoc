@@ -201,8 +201,6 @@ export default class Customer extend Event () {
 
 ```
 
-
-
 #### 3.4. 变量声明后空一行
 
 ## 4. 空格
