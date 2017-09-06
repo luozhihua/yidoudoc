@@ -353,4 +353,30 @@ class Analysis {
 }
 ```
 
-#### 4.3. 函数和方法的参数之间必须留空格
+#### 4.4. 函数和方法的参数之间必须留空格
+
+***错误***
+
+```javascript
+
+function loadProducts(url,categoryId) {...}
+
+class Student extend Person {
+    constructor(studentNumber,foo,bar,baz) {
+        ...
+    }
+}
+```
+
+***正确***
+
+```javascript
+
+function loadProducts(url, categoryId) {...}
+
+class Student extend Person {
+    constructor(studentNumber, foo, bar, baz) {
+        ...
+    }
+}
+```
