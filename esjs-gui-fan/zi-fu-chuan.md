@@ -18,7 +18,7 @@ let userName = '乔峰'
 let address = '上海市徐汇区桂平路xx号'
 let button = '<button id="btn-add" />'
 ```
-#### 在 ES6 中，不应使用字符串拼接
+#### 在 ES6 中，应使用 _摸板字符串_ 代替 _字符串拼接_
 
 ES6 支持模板字符串，比字符串拼接更直观、简洁
 
