@@ -193,6 +193,7 @@ export default class Customer extend Event () {
         let url = `/api/customer/details/${id}`
         let data = await this.$ajax.get(url)
         
+        // 变量块后面空一行（上一行）
         this.customeName = data.name
         this.logo = data.imgUrl
     }
