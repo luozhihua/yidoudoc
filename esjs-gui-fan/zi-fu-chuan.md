@@ -74,3 +74,37 @@ if (foo < 10) {
     baz = bar - bat
 }
 ```
+
+#### 数组、对象等元素最后建议不必跟一个逗号
+
+***不建议***
+
+```javascript
+let users = [
+    {name: '小人鱼'},
+    {name: '小鱼人'},
+    {name: '人小鱼'},
+]
+
+let details = {
+    title: '精通 JavaScript 之 从入门到猝死',
+    price: 200,
+    author: '佚名',
+}
+```
+
+***建议***
+
+```javascript
+let users = [
+    {name: '小人鱼'},
+    {name: '小鱼人'},
+    {name: '人小鱼'}
+]
+
+let details = {
+    title: '精通 JavaScript 之 从入门到猝死',
+    price: 200,
+    author: '佚名'
+}
+```
