@@ -135,4 +135,39 @@ if (foo = list.length && bar) {
 }
 ```
 
-#### switch 注意合理使用 break
+#### 连续的判断某个变量时建议使用 `swith`(一般是在判断枚举值时)
+
+***错误***
+```javascript
+let foo
+
+if (foo === 1) {
+    console.log(1)
+} else if (foo === 2) {
+    // ...
+} else if (foo === 3) {
+    // ...
+}
+```
+
+***正确***
+```javascript
+let foo
+
+switch (foo) {
+    case 1:
+        console.log(1)
+        break
+        
+    case 2:
+        console.log(2)
+        break
+        
+    case 3:
+        console.log(3)
+        break
+        
+    default:
+        console.log('else')
+}
+```
