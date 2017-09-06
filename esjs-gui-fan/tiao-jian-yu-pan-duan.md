@@ -1,6 +1,6 @@
 #条件与判断
 
-## 禁止使用`==` 和 `!=`
+#### 禁止使用`==` 和 `!=`
 
 ***错误***
 
@@ -62,3 +62,46 @@ if (baz === false) {
     console.log('baz is not false')
 }
 ```
+
+#### 不能省略 if后面的`{` 和 `}`
+***错误***
+
+```javascript
+    if (foo) bar()
+    
+    if (baz) bat()
+    else bar()
+```
+
+***正确***
+
+```javascript
+if (foo) {
+    bar()
+}
+
+if (baz) {
+    bat()
+} else {
+    bar()
+}
+```
+
+#### 禁止用三元表达式执行函数
+
+***错误***
+
+```javascript
+user.active ? foo() : bar()
+```
+
+***正确***
+
+```javascript
+if (user.active) {
+    foo()
+} else { 
+    bar()
+}
+```
+
