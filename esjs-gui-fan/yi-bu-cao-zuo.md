@@ -8,9 +8,36 @@
 
 ```javascript
 
+// 异步函数
 async function load() {
   let url = '/api/xxx'
   let response = await axios.get(url)
   
   console.log(response)
 }
+
+// Vue组件
+export default {
+  data() {
+    return {
+      url: '/api/xxx',
+      products: []
+    }
+  },
+  
+  /**
+   * 加载数据的方法
+   */
+  async loadProducts() {
+    let response
+    
+    try {
+      response = await this.$ajax.get(this.url)
+      
+      this.prosucts = response.data
+    } catch (error) {
+      console.log(error.message)
+    }    
+  }
+}
+```
