@@ -19,9 +19,11 @@ function openSelector () {
 
 // 调用异步函数
 async function load() {
-  let response = await openSelector()
+  console.log('loading...');
   
-  console.log(response)
+  let response = await openSelector()
+
+  console.log(`Response Data: ${response}`)
 }
 
 // Vue组件
