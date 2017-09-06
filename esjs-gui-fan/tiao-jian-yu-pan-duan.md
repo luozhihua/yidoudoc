@@ -87,7 +87,7 @@ if (baz) {
 }
 ```
 
-#### 禁止用三元表达式执行函数
+#### 尽量不用三元表达式执行函数
 
 ***错误***
 
@@ -105,3 +105,17 @@ if (user.active) {
 }
 ```
 
+#### 禁止在 if 语句内执行表达式
+
+***错误***
+```javascript```
+let foo
+let bar = true
+
+if (foo = 10 && bar) {
+    console.log(foo)
+} else {
+    console.log(foo)
+}
+
+***正确***
