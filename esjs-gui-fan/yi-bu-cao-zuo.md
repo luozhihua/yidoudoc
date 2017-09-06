@@ -35,7 +35,6 @@ export default {
       
       try {
         response = await this.$ajax.get(url)
-        
         this.prosucts = response.data
       } catch (error) {
         console.log(error.message)
