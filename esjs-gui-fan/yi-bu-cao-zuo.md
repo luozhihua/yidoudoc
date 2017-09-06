@@ -9,11 +9,11 @@
 ```javascript
 
 // 定义一个异步函数
-function openSelector {
+function openSelector () {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(789)
-    }, 10000)
+    }, 5000)
   })
 }
 
