@@ -36,8 +36,8 @@ if (baz == false) {
 ***正确***
 
 ```javascript
-let foo = '1'
-if (foo.toString() === 1) {
+let foo = '1.5'
+if (Number(foo) === 1.5) {
     ...
 }
 
