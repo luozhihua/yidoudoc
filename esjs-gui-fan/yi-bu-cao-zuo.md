@@ -28,29 +28,23 @@ async function load() {
 
 // Vue组件
 export default {
-  data() {
-    return {
-      url: '/api/xxx',
-      products: []
-    }
-  },
-  
-  /**
-   * 加载数据的方法
-   */
-  async loadProducts() {
-    let response
-    
-    try {
-      response = await this.$ajax.get(this.url)
+  methods: {
+    async loadProducts() {
+      let response
       
-      this.prosucts = response.data
-    } catch (error) {
-      console.log(error.message)
-    }    
+      try {
+        response = await this.$ajax.get(this.url)
+        
+        this.prosucts = response.data
+      } catch (error) {
+        console.log(error.message)
+      }    
+    }
   }
 }
 
 // 类方法
-class 
+class Person {
+
+}
 ```
