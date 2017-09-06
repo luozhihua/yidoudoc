@@ -25,3 +25,21 @@
   1. EsFormatter
   1. CSS3
   1. https://github.com/luozhihua/sublime-vue-formatter （建议安装）
+
+## 代码质量
+
+对使用 NPM 打包的项目，将强制使用 ESLint 检测代码质量，此规范执行分两阶段执行：
+
+#### 第一阶段：
+
+开发人员自行启动带有 EsLint 的命令进行调试，有报错的即时解决
+
+带 ESLint 的命令：
+
+1. npm run dev:lint
+1. npm run old:lint
+
+#### 第二阶段：
+
+1. 将会在提交代码时强制使用 ESLint 检查，一旦有不规范的代码，Git将自动拒绝合并
+1. 在测试环境、生产环境的部署也将使用 ESLint 强制检查；
