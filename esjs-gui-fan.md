@@ -274,6 +274,16 @@ switch(user.gender){
     default:
         console.log('我也不知道自己是不是男人')
 }
+
+while(i<20){
+    i = i+1
+    console.log(i)
+}
+
+do{
+    i = i+1
+    console.log(i)
+}while(i<10)
 ```
 
 ***正确***
@@ -297,32 +307,23 @@ switch (user.gender) {
     default:
         console.log('我也不知道自己是不是男人')
 }
+
+while (i<20) {
+    i = i + 1
+    console.log(i)
+}
+
+do {
+    i = i + 1
+    console.log(i)
+} while (i < 10)
 ```
 
 
-#### 4.2. if、else、switch、function、class 关键字与后面的小括号或大括号之间必须留一个空格
+#### 4.3. function、class的大括号之前必须留一个空格
 
 ***错误***
 ```javascript
-if(typeof window.console !== 'undefined'){
-    console.log(1)
-}else{
-    alert(2)
-}
-
-switch(user.gender){
-    case 'male':
-        console.log('我是男人')
-        break
-        
-    case 'female':
-        console.log('我不是男人')
-        break
-        
-    default:
-        console.log('我也不知道自己是不是男人')
-}
-
 function loadData(){
     this.$ajax.get('/api/xxx')
 }
@@ -339,30 +340,11 @@ class Analysis{
 ***正确***
 
 ```javascript
-if (typeof window.console !== 'undefined') {
-    console.log(1)
-} else {
-    alert(2)
-}
-
-switch (user.gender) {
-    case 'male':
-        console.log('我是男人')
-        break
-        
-    case 'female':
-        console.log('我不是男人')
-        break
-        
-    default:
-        console.log('我也不知道自己是不是男人')
-}
-
 function loadData() {
     this.$ajax.get('/api/xxx')
 }
 
-const loadData = function () {
+const loadData = function() {
     this.$ajax.get('/api/xxx')
 }
 
