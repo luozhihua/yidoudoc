@@ -172,9 +172,9 @@ export default class Customer extend Event () {
     
     async load() {
         let id = this.customerId
-        let url = `/api/customer/details/${id}`
+        let url = '/api/customer/details/'
+        url = api + id
         let data = await this.$ajax.get(url)
-        
         this.customeName = data.name
         this.logo = data.imgUrl
     }
@@ -182,15 +182,22 @@ export default class Customer extend Event () {
 ```
 ***正确***
 ```javascript
-export default function (list = []) {
-    let userNames = []
-    
-    for (let i = 0, len = list.length; i < len; i++) {
-        userNames.push(list.userName)
+export default class Customer extend Event () {
+    constructor(id) {
+        this.customerId = id
+        this.load()
     }
     
-    return userNames
+    async load() {
+        let id = this.customerId
+        let url = `/api/customer/details/${id}`
+        let data = await this.$ajax.get(url)
+        
+        this.customeName = data.name
+        this.logo = data.imgUrl
+    }
 }
+
 ```
 
 
