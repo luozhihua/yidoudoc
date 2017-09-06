@@ -218,6 +218,39 @@ export default class Customer extend Event () {
 参考上方第3.3节中的实例
 
 ## 4. 空格
-#### 4.1. 逗号、===、!==、<、>、||、&&、+、-、*、/、等操作符前后必须留一个空格
+
+#### 4.1. `逗号` `===` `!==` `<` `>` `||` `&&` `+` `-` `*` `/`等操作符前后必须留一个空格
+
+***错误***
+
+```javascript
+console.log(1,2,3,4)
+
+if(variable===100){...}
+if(variable!==80){...}
+if(variable<80){...}
+if(variable>80){...}
+if(variable>80||age<18){...}
+if(variable>80&&age<18){...}
+
+let amount = product[0].price+product[1].price
+let difference = product[0].price-product[1].price
+```
+***z去***
+
+```javascript
+console.log(1,2,3,4)
+
+if(variable===100){...}
+if(variable!==80){...}
+if(variable<80){...}
+if(variable>80){...}
+if(variable>80||age<18){...}
+if(variable>80&&age<18){...}
+
+let amount = product[0].price+product[1].price
+let difference = product[0].price-product[1].price
+```
+
 #### 4.2. if、else、switch、function、class 关键字与后面的小括号或大括号之间必须留一个空格
 #### 4.3. 函数和方法的参数之间必须留空格	
