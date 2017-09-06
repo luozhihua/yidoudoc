@@ -79,7 +79,7 @@ import('lodash').then(lodash => {
 const API_HOST = '127.0.0.1'
 const API_PORT = '8080'
 ```
-#### 2.2. 声明在文件、模块或代码块的最上方(如果有 import则在 import下方声明)
+#### 2.2. 常量声明在文件、模块或代码块的最上方(如果有 import则在 import下方声明)
 ```javascript
 import {isPlainObject} from 'lodash'
 
