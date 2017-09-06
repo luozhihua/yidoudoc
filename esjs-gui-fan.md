@@ -236,20 +236,20 @@ if(variable>80&&age<18){...}
 let amount = product[0].price+product[1].price
 let difference = product[0].price-product[1].price
 ```
-***z去***
+***正确***
 
 ```javascript
-console.log(1,2,3,4)
+console.log(1, 2, 3, 4)
 
-if(variable===100){...}
-if(variable!==80){...}
-if(variable<80){...}
-if(variable>80){...}
-if(variable>80||age<18){...}
-if(variable>80&&age<18){...}
+if (variable === 100) {...}
+if (variable !== 80) {...}
+if (variable < 80) {...}
+if (variable > 80) {...}
+if (variable > 80 || age < 18) {...}
+if (variable > 80 && age < 18) {...}
 
-let amount = product[0].price+product[1].price
-let difference = product[0].price-product[1].price
+let amount = product[0].price + product[1].price
+let difference = product[0].price - product[1].price
 ```
 
 #### 4.2. if、else、switch、function、class 关键字与后面的小括号或大括号之间必须留一个空格
