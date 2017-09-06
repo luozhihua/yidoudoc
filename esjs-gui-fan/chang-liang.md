@@ -136,7 +136,6 @@ export default class Customer extend Event () {
             record.updateTime = now
         })
         
-        // 变量块后面空一行（上一行）
         this.customeName = data.name
         this.logo = data.imgUrl
     }
