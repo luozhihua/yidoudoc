@@ -109,13 +109,25 @@ if (user.active) {
 
 ***错误***
 ```javascript```
-let foo = 0
+let foo
 let bar = true
 
 if (foo = 0 && bar) {
+    console.log(1)
+} else {
+    console.log(2)
+}
+```
+
+***正确***
+```javascript
+let foo
+let bar = true
+let list = []
+
+if (foo = list.length && bar) {
     console.log(foo)
 } else {
     console.log(foo)
 }
-
-***正确***
+```
