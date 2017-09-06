@@ -134,3 +134,5 @@ if (foo = list.length && bar) {
     console.log(foo)
 }
 ```
+
+#### switch 注意合理使用 break
