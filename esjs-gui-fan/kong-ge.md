@@ -1,6 +1,6 @@
 #空格
 
-#### 4.1. `逗号` `===` `!==` `<` `>` `||` `&&` `+` `-` `*` `/`等操作符前后必须留一个空格
+#### 1. `逗号` `===` `!==` `<` `>` `||` `&&` `+` `-` `*` `/`等操作符前后必须留一个空格
 
 ***错误***
 
@@ -33,7 +33,7 @@ let amount = product[0].price + product[1].price
 let difference = product[0].price - product[1].price
 ```
 
-#### 4.2 `if` `else` `switch` `while` `do while`等关键字与小括号、大括号之间留一个空格
+#### 2 `if` `else` `switch` `while` `do while`等关键字与小括号、大括号之间留一个空格
 
 ***错误***
 ```javascript
@@ -101,7 +101,7 @@ do {
 ```
 
 
-#### 4.3. function、class的大括号之前必须留一个空格
+#### 3. function、class的大括号之前必须留一个空格
 
 ***错误***
 ```javascript
@@ -134,7 +134,7 @@ class Analysis {
 }
 ```
 
-#### 4.4. 函数和方法的参数之间必须留空格
+#### 4. 函数和方法的参数之间必须留空格
 
 ***错误***
 
