@@ -72,6 +72,10 @@ const utils = {
 
 ```javascript
 const utils = {
+  parseUrl (url) {
+    return url
+  },
+  
   format (params) {
     return `姓名：${params.name};`
   }
