@@ -19,9 +19,16 @@ if (bar == false) {
 
 let bat = []
 if (bat == false) {
-    console.log('bat is null')
+    console.log('bat is false')
 } else {
-    console.log('bat is not null')
+    console.log('bat is not false')
+}
+
+let baz = ''
+if (baz == false) {
+    console.log('bat is false')
+} else {
+    console.log('bat is not false')
 }
 
 ```
