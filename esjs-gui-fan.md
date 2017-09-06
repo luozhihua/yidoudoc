@@ -161,7 +161,7 @@ export default function (list = []) {
 }
 ```
 
-#### 3.3. 变量声明全部放置在函数、方法的最前面, 变量块后空一行
+#### 3.3. 变量声明全部放置在函数、方法的最前面
 ***错误***
 ```javascript
 export default class Customer extend Event () {
@@ -175,6 +175,12 @@ export default class Customer extend Event () {
         let url = '/api/customer/details/'
         url = api + id
         let data = await this.$ajax.get(url)
+        
+        let now = Date.now()
+        data.records.forEach(record => {
+            record.updateTime = now
+        })
+        
         this.customeName = data.name
         this.logo = data.imgUrl
     }
@@ -184,6 +190,7 @@ export default class Customer extend Event () {
 ```javascript
 export default class Customer extend Event () {
     constructor(id) {
+        super()
         this.customerId = id
         this.load()
     }
@@ -192,6 +199,11 @@ export default class Customer extend Event () {
         let id = this.customerId
         let url = `/api/customer/details/${id}`
         let data = await this.$ajax.get(url)
+        let now = Date.now()
+        
+        data.records.forEach(record => {
+            record.updateTime = now
+        })
         
         // 变量块后面空一行（上一行）
         this.customeName = data.name
@@ -202,6 +214,8 @@ export default class Customer extend Event () {
 ```
 
 #### 3.4. 变量声明后空一行
+
+参考上方第3.3节中的实例
 
 ## 4. 空格
 #### 4.1. 逗号、===、!==、<、>、||、&&、+、-、*、/、等操作符前后必须留一个空格
