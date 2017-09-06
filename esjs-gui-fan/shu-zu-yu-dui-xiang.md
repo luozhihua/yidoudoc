@@ -40,6 +40,27 @@ list.forEach((item, i)=>{
 })
 ```
 
+#### 字面对象的每一个属性占一行
+
+***错误***
+```javascript
+
+let params = { id: 'xxx', age: 30, contry: 'CN'}
+
+```
+
+***正确***
+
+```javascript
+
+let params = {
+  id: 'xxx',
+  age: 30,
+  contry: 'CN'
+}
+
+```
+
 #### ES6中读取对象属性建议使用 Object.keys()
 
 ```javascript
