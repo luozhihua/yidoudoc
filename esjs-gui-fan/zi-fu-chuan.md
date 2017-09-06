@@ -42,3 +42,35 @@ let url = `/api/clue?cate=${categoryId}&year=${year}&month=${month}`
 
 this.$ajax.get(url).then(...)
 ```
+
+#### 省略每一个后面的分号
+
+***错误***
+
+```javascript
+let foo = 1;
+let bar = 2;
+let bat = 3;
+let baz;
+
+if (foo < 10) {
+    baz = bar + bat;
+} else {
+    baz = bar - bat;
+}
+```
+
+***正确***
+
+```javascript
+let foo = 1
+let bar = 2
+let bat = 3
+let baz
+
+if (foo < 10) {
+    baz = bar + bat
+} else {
+    baz = bar - bat
+}
+```
