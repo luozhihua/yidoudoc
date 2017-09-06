@@ -253,4 +253,14 @@ let difference = product[0].price - product[1].price
 ```
 
 #### 4.2. if、else、switch、function、class 关键字与后面的小括号或大括号之间必须留一个空格
+
+***错误***
+```javascript
+if (typeof window.console === 'undefined') {
+    console.log()
+}
+
+
+***正确***
+
 #### 4.3. 函数和方法的参数之间必须留空格	
