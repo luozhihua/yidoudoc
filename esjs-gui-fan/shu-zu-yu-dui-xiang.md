@@ -39,3 +39,6 @@ list.forEach((item, i)=>{
     list[i] = item * 10
 })
 ```
+
+#### ES6中读取对象属性建议使用 Object.keys
+
