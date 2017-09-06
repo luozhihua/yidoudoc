@@ -20,23 +20,23 @@ let params = {}
 
 #### ES6中数组循环请使用 foreach
 
-***不建议***
+***不推荐***
 
 ```javascript
 let list = [1, 2, 3, 4, 5]
 
 for (let i = 0, len = list.length; i< len; i++) {
-    list[i] = list[i] * 10
+  list[i] = list[i] * 10
 }
 ```
 
-***建议***
+***推荐***
 
 ```javascript
 let list = [1, 2, 3, 4, 5]
 
 list.forEach((item, i)=>{
-    list[i] = item * 10
+  list[i] = item * 10
 })
 ```
 
@@ -44,24 +44,36 @@ list.forEach((item, i)=>{
 
 ```javascript
 let params = {
-    userId: 'xxxxxxx',
-    userName: '乔峰',
-    password: '123456'
+  userId: 'xxxxxxx',
+  userName: '乔峰',
+  password: '123456'
 }
 
 let keys = Object.keys(params) // => ['userId', 'userName', 'password']
 
 Object.keys(params).forEach(key => {
-    console.log(params[key])
+  console.log(params[key])
 })
 ```
 
 #### ES6 中 对象的方法可以省略 function 关键字
 
+***不推荐***
+
 ```javascript
 const utils = {
-    format: function() {
-        
-    } 
+  format: function(params) {
+    return `姓名：${params.name};`
+  } 
+}
+```
+
+***推荐***
+
+```javascript
+const utils = {
+  format (params) {
+    return `姓名：${params.name};`
+  }
 }
 ```
