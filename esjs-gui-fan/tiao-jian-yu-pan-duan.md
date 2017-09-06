@@ -18,5 +18,10 @@ if (bar == false) {
 }
 
 let bat = false
+if (bat == null) {
+    console.log('bat is null')
+} else {
+    console.log('bat is not null')
+}
 
 ```
