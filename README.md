@@ -8,22 +8,20 @@
 
 * IntelliJ IDEA 和 Web Storm 请安装以下插件（安装方法自己Google、百度）：
 
-  1. Vue.js (**必须安装**)
   1. EditorConfig (**必须安装**)
+  1. Vue.js (**必须安装**)
+  1. ESLint (**必须安装**)
   1. Less support
   1. Sass Support
   1. scss-lint
-  1. ESLint (**必须安装**)
-  1. NodeJS  
+  1. NodeJS
 
 
 * Sublime Text 安装以下插件
 
   1. EditorConfig (必须安装)
+  1. Vuejs Complete package （必须安装）
+  1. JavaScriptNext ES6-Syntax (必须安装)
   1. EsFormatter
   1. CSS3
-  1. Vuejs Complete package （必须安装）
   1. https://github.com/luozhihua/sublime-vue-formatter （建议安装）
-  
-  
-* 
