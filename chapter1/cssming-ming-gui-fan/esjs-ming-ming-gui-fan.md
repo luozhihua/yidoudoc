@@ -7,7 +7,7 @@
 ***实例：***
 
 ```javascript
-    const API_HOST = '192.168.1.1'
+const API_HOST = '192.168.1.1'
 ```
 
 ## 2. 变量强制使用**小驼峰***（camelCased）
@@ -15,15 +15,15 @@
 ***正确：***
 
 ```javascript
-    let onlineUsers = ['张三', '李四']
-    let onlineUserList = ['张三', '李四']
+let onlineUsers = ['张三', '李四']
+let onlineUserList = ['张三', '李四']
 ```
 
 ***错误：***
 
 ```javascript
-    let OnlineUser = ['张三', '李四']
-    let online_user_list = ['张三', '李四']
+let OnlineUser = ['张三', '李四']
+let online_user_list = ['张三', '李四']
 ```
 
 ## 3. 函数名、对象和类的方法名统一使用小驼峰（camelCased）
@@ -31,83 +31,81 @@
 ***正确：***
 
 ```javascript
-    function getAllUsers(){
-        return []
-    }
-    
-    const user = {
-        isExists() {
-            return true
-        }
-    }
+function getAllUsers(){
+  return []
+}
+
+const user = {
+  isExists() {
+    return true
+  }
+}
 ```
 
 ***错误：***
 
 ```javascript
+function get_all_users() {}
 
-    function get_all_users() {}
-    
-    function GetAllUsers() {}
-    
-    const user = {
-        is_exists() {
-            return true
-        }
-    }
+function GetAllUsers() {}
+
+const user = {
+  is_exists() {
+    return true
+  }
+}
 ```
-    
+
 ## 4. 对象和类的属性名使用小驼峰（camelCased)
 
 ***正确：***
 
 ```javascript
-    const user = {
-        isExists: true,
-        createdTime: 123124321543
-    }
-    
-    class Clue extend Event {
-        constructor() {
-            super()
-            
-            this.createdTime = Date.now()
-        }
-        
-        // 只读属性
-        get createdTime() { return this.data.createdTime }
-        
-        // 可修改属性
-        get updateTime() { return this.data.updateTime }
-        set updateTime(time) { this.data.updateTime = time }        
-    }
+const user = {
+  isExists: true,
+  createdTime: 123124321543
+}
+
+class Clue extend Event {
+  constructor() {
+    super()
+
+    this.createdTime = Date.now()
+  }
+
+  // 只读属性
+  get createdTime() { return this.data.createdTime }
+
+  // 可修改属性
+  get updateTime() { return this.data.updateTime }
+  set updateTime(time) { this.data.updateTime = time }
+}
 ```
 
 ***错误：***
 
 ```javascript
+const user = {
+  is_exists: true,
+  created_time: 123124321543,
+  _props: {...}
+}
 
-    const user = {
-        is_exists: true,
-        created_time: 123124321543,
-        _props: {...}
-    }
-    
-    class Clue extend Event {
-        constructor() {
-            super()
-            
-            this.created_time = Date.now()
-            this._user = Date.now()
-        }
-        
-        // 只读属性
-        get CreatedTime() { return this.data.createdTime }
-        
-        // 可修改属性
-        get update_time() { return this.data.updateTime }
-        set update_time(time) { this.data.updateTime = time }        
-    }
+class Clue extend Event {
+  constructor() {
+    super()
+
+    this.created_time = Date.now()
+    this._user = Date.now()
+  }
+
+  // 只读属性
+  get CreatedTime() { return this.data.createdTime }
+
+  // 可修改属性
+  get update_time() { return this.data.updateTime }
+  set update_time(time) { this.data.updateTime = time }
+}
 ```
 
 
@@ -117,15 +115,15 @@
 ```javascript
 
 class Distribution {
-    constructor(options) {
-        console.log(options)
-    }
+  constructor(options) {
+    console.log(options)
+  }
 }
 
 class UserCenter extend Event {
-    constructor(options) {
-        super()
-    }
+  constructor(options) {
+    super()
+  }
 }
 ```
 
@@ -134,15 +132,15 @@ class UserCenter extend Event {
 ```javascript
 
 class distribution {
-    constructor(options) {
-        console.log(options)
-    }
+  constructor(options) {
+    console.log(options)
+  }
 }
 
 class userCenter extend Event {
-    constructor(options) {
-        super()
-    }
+  constructor(options) {
+    super()
+  }
 }
 ```
 
@@ -153,40 +151,40 @@ class userCenter extend Event {
 ***参考：***
 
 ```javascript
-function isNumber(foo) { 
-    return (typeof foo === 'number'); 
+function isNumber(foo) {
+  return (typeof foo === 'number');
 }
 
 export default {
-    methods: {
-        
-        // 是否激活
-        isActivated (o) { 
-            return true 
-        },
-        
-        // 是否可以删除
-        canDelete() { 
-            return false 
-        },
-        
-        isCurrentTab() { 
-            return true 
-        },
-        
-        getUsers() { 
-            return [
-                {name: '王路'}, 
-                {name: '小鱼人'}
-            ]; 
-        },
-        
-        getOrderList() { 
-            return [
-                {…}, 
-                {…}
-            ]; 
-        }
+  methods: {
+
+    // 是否激活
+    isActivated (o) {
+      return true
+    },
+
+    // 是否可以删除
+    canDelete() {
+      return false
+    },
+
+    isCurrentTab() {
+      return true
+    },
+
+    getUsers() {
+      return [
+        {name: '王路'},
+        {name: '小鱼人'}
+      ];
+    },
+
+    getOrderList() {
+      return [
+        {…},
+        {…}
+      ];
     }
+  }
 }
 ```
