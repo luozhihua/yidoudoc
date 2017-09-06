@@ -109,10 +109,10 @@ if (user.active) {
 
 ***错误***
 ```javascript```
-let foo
+let foo = 0
 let bar = true
 
-if (foo = 10 && bar) {
+if (foo = 0 && bar) {
     console.log(foo)
 } else {
     console.log(foo)
