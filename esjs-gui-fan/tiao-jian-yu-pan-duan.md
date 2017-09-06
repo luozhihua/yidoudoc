@@ -111,8 +111,9 @@ if (user.active) {
 ```javascript```
 let foo
 let bar = true
+let list = []
 
-if (foo = 0 && bar) {
+if (foo = list.length && bar) {
     console.log(1)
 } else {
     console.log(2)
