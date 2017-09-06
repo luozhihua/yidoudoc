@@ -15,12 +15,12 @@
 除项目结构外的目录，应该尽量以简短的业务模块名称命名，尽量用名词，不要含有无关的动词、修饰词或形容词
 
 *** 正确：*** 
-- `views/clue/bar.vue`
-- `views/card-scanner/for.vue`
+- `views/clue/`
+- `views/card-scanner/`
 
 *** 错误：*** 
-- `views/clueInfo/bar.vue`
-- `views/scan-card/foo.vue`
+- `views/clueInfo/`
+- `views/scan-card/`
 
 ## 3. 文件命名原则
 
