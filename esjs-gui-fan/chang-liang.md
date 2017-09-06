@@ -17,13 +17,13 @@ const USER_MODEL = {...}
 
 ```javascript
 export default function () {
-    // 在代码块的最前面声明常量（const下方空一行）
-    const INTERVAL_TIME = 3000
-    const USER_ID = 'akdf3h-fndnj-askdjal2312erflkeja9'
-    
-    setTimeout(()=>{
-        console.log(Date.now())
-    })
+  // 在代码块的最前面声明常量（const下方空一行）
+  const INTERVAL_TIME = 3000
+  const USER_ID = 'akdf3h-fndnj-askdjal2312erflkeja9'
+
+  setTimeout(()=>{
+    console.log(Date.now())
+  })
 }
 ```
 
@@ -34,15 +34,15 @@ export default function () {
 
 ```javascript
 export default {
-    async loadData() {
-        url = 'https://www.yidouinc.com/api/v2.0/auth'
-        parmas = {username: 'colin', password: '123456'}
-        
-        axios.post(url, params)
-            .then((response)=>{
-                console.log(response)
-            })
-    }
+  async loadData() {
+    url = 'https://www.yidouinc.com/api/v2.0/auth'
+    parmas = {username: 'colin', password: '123456'}
+
+    axios.post(url, params)
+      .then((response)=>{
+        console.log(response)
+      })
+  }
 }
 ```
 
@@ -50,15 +50,15 @@ export default {
 
 ```javascript
 export default {
-    async loadData() {
-        let url = 'https://www.yidouinc.com/api/v2.0/auth'
-        let parmas = {username: 'colin', password: '123456'}
-        
-        axios.post(url, params)
-            .then((response)=>{
-                console.log(response)
-            })
-    }
+  async loadData() {
+    let url = 'https://www.yidouinc.com/api/v2.0/auth'
+    let parmas = {username: 'colin', password: '123456'}
+
+    axios.post(url, params)
+      .then((response)=>{
+        console.log(response)
+      })
+  }
 }
 ```
 
@@ -67,13 +67,13 @@ export default {
 ***错误***
 ```javascript
 export default function (list = []) {
-    var userNames = []
-    
-    for (var i = 0, len = list.length; i < len; i++) {
-        userNames.push(list.userName)
-    }
-    
-    return userNames
+  var userNames = []
+
+  for (var i = 0, len = list.length; i < len; i++) {
+      userNames.push(list.userName)
+  }
+
+  return userNames
 }
 ```
 ***正确***
@@ -81,11 +81,11 @@ export default function (list = []) {
 ```javascript
 export default function (list = []) {
     let userNames = []
-    
+
     for (let i = 0, len = list.length; i < len; i++) {
         userNames.push(list.userName)
     }
-    
+
     return userNames
 }
 ```
@@ -94,20 +94,20 @@ export default function (list = []) {
 ***错误***
 ```javascript
 export default class Customer extend Event () {
-    async load() {
-        let id = this.customerId
-        let url = '/api/customer/details/'
-        url = api + id
-        let data = await this.$ajax.get(url)
-        let now = Date.now()
-        
-        data.records.forEach(record => {
-            record.updateTime = now
-        })
-        
-        this.customeName = data.name
-        this.logo = data.imgUrl
-    }
+  async load() {
+    let id = this.customerId
+    let url = '/api/customer/details/'
+    url = api + id
+    let data = await this.$ajax.get(url)
+    let now = Date.now()
+
+    data.records.forEach(record => {
+      record.updateTime = now
+    })
+
+    this.customeName = data.name
+    this.logo = data.imgUrl
+  }
 }
 ```
 
@@ -115,20 +115,20 @@ export default class Customer extend Event () {
 
 ```javascript
 export default class Customer extend Event () {
-    async load() {
-        let id = this.customerId
-        let url = `/api/customer/details/${id}`
-        let data = await this.$ajax.get(url)
-        let now = Date.now()
-        
-        // ↑↑↑变量块后面空一行
-        data.records.forEach(record => {
-            record.updateTime = now
-        })
-        
-        this.customeName = data.name
-        this.logo = data.imgUrl
-    }
+  async load() {
+    let id = this.customerId
+    let url = `/api/customer/details/${id}`
+    let data = await this.$ajax.get(url)
+    let now = Date.now()
+
+    // ↑↑↑变量块后面空一行
+    data.records.forEach(record => {
+      record.updateTime = now
+    })
+
+    this.customeName = data.name
+    this.logo = data.imgUrl
+  }
 }
 ```
 

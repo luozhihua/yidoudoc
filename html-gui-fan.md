@@ -4,33 +4,33 @@
 
 ## 2. 使用语义化标签
 
-	***错误：***
-	```html
-	<div class=”header”>
-		<div class=”title”></div>
-	</div>
-	
-	<div class=”list”> 
-		<div class=”list-item”>1</div>
-		<div class=”list-item”>2</div>
-		<div class=”list-item”>3</div>
-	</div>
-	```
-	
-	*** 正确：***
-	
-	```html
-	<header>
-		<div class=”title”></div>
-	</header>
-	
-	<ul class=”list”> 
-		<li class=”list-item”>1</li>
-		<li class=”list-item”>2</li>
-		<li class=”list-item”>3</li>
-	</ul>
-	```
-	
+***错误：***
+```html
+<div class=”header”>
+	<div class=”title”></div>
+</div>
+
+<div class=”list”>
+	<div class=”list-item”>1</div>
+	<div class=”list-item”>2</div>
+	<div class=”list-item”>3</div>
+</div>
+```
+
+*** 正确：***
+
+```html
+<header>
+	<div class=”title”></div>
+</header>
+
+<ul class=”list”>
+	<li class=”list-item”>1</li>
+	<li class=”list-item”>2</li>
+	<li class=”list-item”>3</li>
+</ul>
+```
+
 ## 3. 属性值必须使用双引号
 
 ***错误：***
@@ -74,7 +74,7 @@
 	<div class=”component-a” :style=”customStyles”></div>
 </template>
 <script>
-	export default { 
+	export default {
 		data() {
 			return {
 				customStyles: { color: 'red', font: '2rem' }
@@ -94,11 +94,11 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 
 ```html
 <product-selector v-if="cond.type==='product'"
-                  v-model="model[cond.key]"
-                  :options="{selected: model[cond.key]}"
-                  @click=”onClick”>
-    <i class="yd-icon yd-grid"></i> 
-    选择产品
+                v-model="model[cond.key]"
+                :options="{selected: model[cond.key]}"
+                @click=”onClick”>
+  <i class="yd-icon yd-grid"></i>
+  选择产品
 </product-selector>
 ```
 
@@ -110,11 +110,11 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 
 ```html
 <span>
-    <div>Foo</div>
+  <div>Foo</div>
 </span>
 
 <a>
-    <div>Bar</div>
+  <div>Bar</div>
 </a>
 ```
 
@@ -122,11 +122,11 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 
 ```html
 <div>
-    <span>Foo</span>
+  <span>Foo</span>
 </div>
 
 <div>
-    <a>Bar</a>
+  <a>Bar</a>
 </div>
 ```
 
@@ -166,7 +166,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 	<% for (var i=0; i<list.length; i++) {% >
 	<li id=”user”><%= list[i].username %></li>
 	<% } %>
-</ul> 
+</ul>
 
 <template>
 	<ul>
@@ -196,4 +196,3 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 ## 10. Vue 模板中使用v-for的元素必须设置 :key 属性
 
 请参考 [Vue官方介绍](https://cn.vuejs.org/v2/api/#key)
- 

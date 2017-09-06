@@ -10,7 +10,7 @@
 
 ```javascript
 if ((this.posibleClues.filter.orderType == 7 && this.posibleClues.list.length > 0 ) || (this.posibleClues.filter.orderType == 3 && this.posibleClues.list1.length > 0)) {
-      return
+  return
 }
 ```
 
@@ -19,11 +19,11 @@ if ((this.posibleClues.filter.orderType == 7 && this.posibleClues.list.length > 
 ```javascript
 let clue = this. posibleClues
 let type = clue.orderType
-let list = clue.list 
+let list = clue.list
 let userList = clue.userList
 
 if ((type === 7 && list.length > 0) || (type === 3 && userList.length > 0)) {
-      return
+  return
 }
 ```
 

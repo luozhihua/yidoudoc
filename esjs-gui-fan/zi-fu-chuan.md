@@ -55,9 +55,9 @@ let bat = 3;
 let baz;
 
 if (foo < 10) {
-    baz = bar + bat;
+  baz = bar + bat;
 } else {
-    baz = bar - bat;
+  baz = bar - bat;
 }
 ```
 
@@ -70,9 +70,9 @@ let bat = 3
 let baz
 
 if (foo < 10) {
-    baz = bar + bat
+  baz = bar + bat
 } else {
-    baz = bar - bat
+  baz = bar - bat
 }
 ```
 
@@ -84,15 +84,15 @@ if (foo < 10) {
 
 ```javascript
 let users = [
-    {name: '小人鱼'},
-    {name: '小鱼人'},
-    {name: '人小鱼'},
+  {name: '小人鱼'},
+  {name: '小鱼人'},
+  {name: '人小鱼'},
 ]
 
 let details = {
-    title: '精通 JavaScript 之 从入门到猝死',
-    price: 200,
-    author: '佚名',
+  title: '精通 JavaScript 之 从入门到猝死',
+  price: 200,
+  author: '佚名',
 }
 ```
 
@@ -100,14 +100,14 @@ let details = {
 
 ```javascript
 let users = [
-    {name: '小人鱼'},
-    {name: '小鱼人'},
-    {name: '人小鱼'}
+  {name: '小人鱼'},
+  {name: '小鱼人'},
+  {name: '人小鱼'}
 ]
 
 let details = {
-    title: '精通 JavaScript 之 从入门到猝死',
-    price: 200,
-    author: '佚名'
+  title: '精通 JavaScript 之 从入门到猝死',
+  price: 200,
+  author: '佚名'
 }
 ```

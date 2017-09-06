@@ -38,32 +38,32 @@ let difference = product[0].price - product[1].price
 ***错误***
 ```javascript
 if(typeof window.console !== 'undefined'){
-    console.log(1)
+  console.log(1)
 }else{
-    alert(2)
+  alert(2)
 }
 
 switch(user.gender){
-    case 'male':
-        console.log('我是男人')
-        break
-        
-    case 'female':
-        console.log('我不是男人')
-        break
-        
-    default:
-        console.log('我也不知道自己是不是男人')
+  case 'male':
+    console.log('我是男人')
+    break
+
+  case 'female':
+    console.log('我不是男人')
+    break
+
+  default:
+    console.log('我也不知道自己是不是男人')
 }
 
 while(i<20){
-    i = i+1
-    console.log(i)
+  i = i+1
+  console.log(i)
 }
 
 do{
-    i = i+1
-    console.log(i)
+  i = i+1
+  console.log(i)
 }while(i<10)
 ```
 
@@ -71,32 +71,32 @@ do{
 
 ```javascript
 if (typeof window.console !== 'undefined') {
-    console.log(1)
+  console.log(1)
 } else {
-    alert(2)
+  alert(2)
 }
 
 switch (user.gender) {
-    case 'male':
-        console.log('我是男人')
-        break
-        
-    case 'female':
-        console.log('我不是男人')
-        break
-        
-    default:
-        console.log('我也不知道自己是不是男人')
+  case 'male':
+    console.log('我是男人')
+    break
+
+  case 'female':
+    console.log('我不是男人')
+    break
+
+  default:
+    console.log('我也不知道自己是不是男人')
 }
 
 while (i<20) {
-    i = i + 1
-    console.log(i)
+  i = i + 1
+  console.log(i)
 }
 
 do {
-    i = i + 1
-    console.log(i)
+  i = i + 1
+  console.log(i)
 } while (i < 10)
 ```
 
@@ -106,15 +106,15 @@ do {
 ***错误***
 ```javascript
 function loadData(){
-    this.$ajax.get('/api/xxx')
+  this.$ajax.get('/api/xxx')
 }
 
 const loadData = function(){
-    this.$ajax.get('/api/xxx')
+  this.$ajax.get('/api/xxx')
 }
 
 class Analysis{
-    constructor() {...}
+  constructor() {...}
 }
 ```
 
@@ -122,15 +122,15 @@ class Analysis{
 
 ```javascript
 function loadData() {
-    this.$ajax.get('/api/xxx')
+  this.$ajax.get('/api/xxx')
 }
 
 const loadData = function() {
-    this.$ajax.get('/api/xxx')
+  this.$ajax.get('/api/xxx')
 }
 
 class Analysis {
-    constructor() {...}
+  constructor() {...}
 }
 ```
 
@@ -143,9 +143,9 @@ class Analysis {
 function loadProducts(url,categoryId) {...}
 
 class Student extend Person {
-    constructor(studentNumber,foo,bar,baz) {
-        ...
-    }
+  constructor(studentNumber,foo,bar,baz) {
+    ...
+  }
 }
 ```
 
@@ -156,8 +156,8 @@ class Student extend Person {
 function loadProducts(url, categoryId) {...}
 
 class Student extend Person {
-    constructor(studentNumber, foo, bar, baz) {
-        ...
-    }
+  constructor(studentNumber, foo, bar, baz) {
+    ...
+  }
 }
 ```

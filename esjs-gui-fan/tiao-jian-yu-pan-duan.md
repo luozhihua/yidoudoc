@@ -7,28 +7,28 @@
 ```javascript
 let foo = '1'
 if (foo == 1) {
-    ...
+  ...
 }
 
 let bar = 0
 if (bar == false) {
-    console.log('bar is false')
+  console.log('bar is false')
 } else {
-    console.log('bar is true')
+  console.log('bar is true')
 }
 
 let bat = []
 if (bat == false) {
-    console.log('bat is false')
+  console.log('bat is false')
 } else {
-    console.log('bat is not false')
+  console.log('bat is not false')
 }
 
 let baz = ''
 if (baz == false) {
-    console.log('baz is false')
+  console.log('baz is false')
 } else {
-    console.log('baz is not false')
+  console.log('baz is not false')
 }
 ```
 
@@ -38,28 +38,28 @@ if (baz == false) {
 ```javascript
 let foo = '1.5'
 if (Number(foo) === 1.5) {
-    ...
+  ...
 }
 
 let bar = 0
 if (bar === false) {
-    console.log('bar is false')
+  console.log('bar is false')
 } else {
-    console.log('bar is true')
+  console.log('bar is true')
 }
 
 let bat = []
 if (bat === false) {
-    console.log('bat is false')
+  console.log('bat is false')
 } else {
-    console.log('bat is not false')
+  console.log('bat is not false')
 }
 
 let baz = ''
 if (baz === false) {
-    console.log('baz is false')
+  console.log('baz is false')
 } else {
-    console.log('baz is not false')
+  console.log('baz is not false')
 }
 ```
 
@@ -67,23 +67,23 @@ if (baz === false) {
 ***错误***
 
 ```javascript
-    if (foo) bar()
-    
-    if (baz) bat()
-    else bar()
+  if (foo) bar()
+
+  if (baz) bat()
+  else bar()
 ```
 
 ***正确***
 
 ```javascript
 if (foo) {
-    bar()
+  bar()
 }
 
 if (baz) {
-    bat()
+  bat()
 } else {
-    bar()
+  bar()
 }
 ```
 
@@ -99,9 +99,9 @@ user.active ? foo() : bar()
 
 ```javascript
 if (user.active) {
-    foo()
-} else { 
-    bar()
+  foo()
+} else {
+  bar()
 }
 ```
 
@@ -115,9 +115,9 @@ let bar = true
 let list = []
 
 if (foo = list.length && bar) {
-    console.log(1)
+  console.log(1)
 } else {
-    console.log(2)
+  console.log(2)
 }
 ```
 
@@ -129,9 +129,9 @@ let bar = true
 let list = []
 
 if (foo = list.length && bar) {
-    console.log(foo)
+  console.log(foo)
 } else {
-    console.log(foo)
+  console.log(foo)
 }
 ```
 
@@ -142,11 +142,11 @@ if (foo = list.length && bar) {
 let foo
 
 if (foo === 1) {
-    console.log(1)
+  console.log(1)
 } else if (foo === 2) {
-    // ...
+  // ...
 } else if (foo === 3) {
-    // ...
+  // ...
 }
 ```
 
@@ -155,19 +155,19 @@ if (foo === 1) {
 let foo
 
 switch (foo) {
-    case 1:
-        console.log(1)
-        break
-        
-    case 2:
-        console.log(2)
-        break
-        
-    case 3:
-        console.log(3)
-        break
-        
-    default:
-        console.log('else')
+  case 1:
+    console.log(1)
+    break
+
+  case 2:
+    console.log(2)
+    break
+
+  case 3:
+    console.log(3)
+    break
+
+  default:
+    console.log('else')
 }
 ```

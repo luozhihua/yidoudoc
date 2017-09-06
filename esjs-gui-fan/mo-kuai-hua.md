@@ -19,9 +19,9 @@ import * as _ from 'lodash'
 /**
  * file: ./scripts/utils/time.js
  */
- 
+
  import moment from 'moment'
- 
+
  export default {
    /**
     * 获取当前时间戳
@@ -31,7 +31,7 @@ import * as _ from 'lodash'
    now() {
      return Date.now()
    },
-   
+
    /**
     * 格式化时间
     * @public
@@ -54,19 +54,19 @@ let list = [1, 2, 3]
 let plus = function(a, b) { return a + b }
 
 if (isArray(list) && isFunction(plus)) {
-    list.map((item, i) => {
-        return plus(item, 10)
-    })
+  list.map((item, i) => {
+    return plus(item, 10)
+  })
 }
 ```
 
 #### 4. 不常用的模块使用异步导入
 ```javascript
 
-import('lodash').then(lodash => { 
-    let isArr = lodash.isArray([1, 2, 3])
-    
-    console.log(isArr)
+import('lodash').then(lodash => {
+  let isArr = lodash.isArray([1, 2, 3])
+
+  console.log(isArr)
 })
 
 ```

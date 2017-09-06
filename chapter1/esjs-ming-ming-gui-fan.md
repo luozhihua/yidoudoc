@@ -30,13 +30,13 @@ let online_user_list = ['张三', '李四']
 
 ```javascript
 function getAllUsers(...args) {
-    console.log(args)
+  console.log(args)
 }
 
 const Foo = {
-    isExists() {
-        return true
-    }
+  isExists() {
+    return true
+  }
 }
 ```
 
@@ -44,17 +44,17 @@ const Foo = {
 
 ```javascript
 function get_all_users() {
-    return []
+  return []
 }
 
 function GetAllUsers() {
-    return []
+  return []
 }
 
 const list = {
-    is_exists() {
-        return true
-    }
+  is_exists() {
+    return true
+  }
 }
 ```
 
@@ -64,22 +64,22 @@ const list = {
 
 ```javascript
 const user = {
-    lastLogin: '12313132134213',
-    nickName: '乔峰'
+  lastLogin: '12313132134213',
+  nickName: '乔峰'
 }
 
 class Clue extend Event {
 
-    constructor(clueId) {
-        this.createdByUser = '小鱼人'
-    }
-    
-    // 只读属性
-    get createdDate() { return this.data.createdDate }
-    
-    // 可修改属性
-    get updateDate() { return this.data.updateDate }
-    set updateDate(datetime) { this.data.updateDate = datetime }
+  constructor(clueId) {
+    this.createdByUser = '小鱼人'
+  }
+
+  // 只读属性
+  get createdDate() { return this.data.createdDate }
+
+  // 可修改属性
+  get updateDate() { return this.data.updateDate }
+  set updateDate(datetime) { this.data.updateDate = datetime }
 }
 ```
 
@@ -87,22 +87,22 @@ class Clue extend Event {
 
 ```javascript
 const user = {
-    LastLogin: '12313132134213',
-    nick_name: '乔峰'
+  LastLogin: '12313132134213',
+  nick_name: '乔峰'
 }
 
 class Clue extend Event {
 
-    constructor(clueId) {
-        this._createdByUser = '小鱼人'
-    }
-    
-    // 只读属性
-    get CreatedDate() { return this.data.createdDate }
-    
-    // 可修改属性
-    get update_date() { return this.data.updateDate }
-    set update_date(datetime) { this.data.updateDate = datetime }
+  constructor(clueId) {
+    this._createdByUser = '小鱼人'
+  }
+
+  // 只读属性
+  get CreatedDate() { return this.data.createdDate }
+
+  // 可修改属性
+  get update_date() { return this.data.updateDate }
+  set update_date(datetime) { this.data.updateDate = datetime }
 }
 ```
 
@@ -113,16 +113,16 @@ class Clue extend Event {
 **正确：**
 ```javascript
 class Distribution {
-    constructor(options) {
-        console.log(options)
-    }
+  constructor(options) {
+    console.log(options)
+  }
 }
 
 
 class UserCenter extend Event {
-    constructor(options) {
-        super()
-    }
+  constructor(options) {
+    super()
+  }
 }
 ```
 
@@ -130,15 +130,15 @@ class UserCenter extend Event {
 
 ```javascript
 class distribution {
-    constructor(options) {
-        console.log(options)
-    }
+  constructor(options) {
+    console.log(options)
+  }
 }
 
 class userCenter extend Event {
-    constructor(options) {
-        super()
-    }
+  constructor(options) {
+    super()
+  }
 }
 ```
 
@@ -148,39 +148,39 @@ class userCenter extend Event {
 
 ```javascript
 
-function isNumber(foo) { 
-    return (typeof foo === 'number'); 
+function isNumber(foo) {
+  return (typeof foo === 'number');
 }
 
 export default {
-    methods: {
-        // 是否激活
-        isActivated (o) { 
-            return true 
-        },
-    
-        // 是否可以删除
-        canDelete() { 
-            return false 
-        },
-        
-        isCurrentTab() { 
-            return true 
-        },
-        
-        getUsers() { 
-            return [
-                {name: '王路'}, 
-                {name: '小鱼人'}
-            ]; 
-        },
-        
-        getOrderList() { 
-            return [
-                {…}, 
-                {…}
-            ]; 
-        }
+  methods: {
+    // 是否激活
+    isActivated (o) {
+      return true
+    },
+
+    // 是否可以删除
+    canDelete() {
+      return false
+    },
+
+    isCurrentTab() {
+      return true
+    },
+
+    getUsers() {
+      return [
+        {name: '王路'},
+        {name: '小鱼人'}
+      ];
+    },
+
+    getOrderList() {
+      return [
+        {…},
+        {…}
+      ];
     }
+  }
 }
 ```
