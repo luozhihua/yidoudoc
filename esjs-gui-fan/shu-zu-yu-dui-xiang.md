@@ -42,3 +42,15 @@ list.forEach((item, i)=>{
 
 #### ES6中读取对象属性建议使用 Object.keys
 
+```javascript
+let params = {
+    userId: 'xxxxxxx',
+    userName: '乔峰',
+    password: '123456'
+}
+
+let keys = Object.keys(params) // => ['userId', 'userName', 'password']
+
+Object.keys(params).forEach(key => {
+    console.log(params[key])
+})
