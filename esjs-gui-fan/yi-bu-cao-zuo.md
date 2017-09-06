@@ -13,7 +13,7 @@ function openSelector {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(789)
-    }, 3000)
+    }, 10000)
   })
 }
 
