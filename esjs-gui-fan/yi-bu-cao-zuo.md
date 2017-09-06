@@ -8,10 +8,18 @@
 
 ```javascript
 
-// 异步函数
+// 定义一个异步函数
+function openSelector {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(789)
+    }, 3000)
+  })
+}
+
+// 调用异步函数
 async function load() {
-  let url = '/api/xxx'
-  let response = await axios.get(url)
+  let response = await openSelector()
   
   console.log(response)
 }
@@ -40,4 +48,7 @@ export default {
     }    
   }
 }
+
+// 类方法
+class 
 ```
