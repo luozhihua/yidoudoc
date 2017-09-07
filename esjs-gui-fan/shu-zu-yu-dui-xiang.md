@@ -77,7 +77,7 @@ Object.keys(params).forEach(key => {
 })
 ```
 
-#### 5. ES6 中 对象和类的方法可以省略 function 关键字
+#### 5. ES6 中 对象和构造类的方法可以省略 function 关键字
 
 ***不推荐***
 
