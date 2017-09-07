@@ -149,3 +149,15 @@ function load(url, params) {
   }
 }
 ```
+
+使用 Promise的 load 函数加载数据：
+
+```javascript
+// 加载一个 URL
+load('/api/foo', {id: 'xxxx'})
+.then(response=> {
+  console.log(response)
+})
+.catch(e) {
+  
+}
