@@ -36,8 +36,8 @@ Vue官方支持包括大驼峰、小驼峰、羊肉串等不同的写法，不�
 ```html
 <template>
   <div>
-    <product-selector />   // <= 建议写法
-    <ProductSelector />    // <= 不建议
+    <product-selector /> // <= 建议写法
+    <ProductSelector /> // <= 不建议
   </div>
 <template>
 
