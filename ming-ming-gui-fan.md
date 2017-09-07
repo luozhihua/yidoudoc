@@ -6,7 +6,7 @@
 
 ## 2. 一行超过120个字符尽量拆分成多行
 
-*** 错误：***
+❌ *** 错误：***
 
 ```javascript
 if ((this.posibleClues.filter.orderType == 7 && this.posibleClues.list.length > 0 ) || (this.posibleClues.filter.orderType == 3 && this.posibleClues.list1.length > 0)) {
@@ -14,7 +14,7 @@ if ((this.posibleClues.filter.orderType == 7 && this.posibleClues.list.length > 
 }
 ```
 
-*** 正确：***
+✅ *** 正确：***
 
 ```javascript
 let clue = this. posibleClues
