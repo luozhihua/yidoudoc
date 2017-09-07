@@ -6,8 +6,6 @@
 
 ```html
 <div class=”wrapper”></div>
-```
-```html 
 <section title=”foo”></section>
 ```
 
@@ -15,8 +13,6 @@
 
 ```html
 <DIV class=”wrapper”></DIV> 
-```
-```html
 <section Title=”foo”></section>
 ```
 
