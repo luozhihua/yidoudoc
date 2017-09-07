@@ -156,8 +156,8 @@ function load(url, params) {
 // 加载一个 URL
 load('/api/foo', {id: 'xxxx'})
 .then(response=> {
-  console.log(response)
+  console.log('请求成功', response)
 })
-.catch(e) {
-  
-}
+.catch(err=> {
+  console.log('请求失败', err)
+})
