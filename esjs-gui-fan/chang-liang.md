@@ -93,7 +93,9 @@ export default function (list = []) {
 ```
 
 #### 2.3. 变量声明全部放置在函数、方法的最前面
-***错误***
+
+❌ ***错误***
+
 ```javascript
 export default class Customer extend Event () {
   async load() {
@@ -113,7 +115,7 @@ export default class Customer extend Event () {
 }
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 export default class Customer extend Event () {
