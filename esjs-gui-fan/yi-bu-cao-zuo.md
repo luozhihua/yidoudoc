@@ -62,5 +62,18 @@ class Person {
  * 
  */
 function load(url, params, callback) {
+  let xhr = new XMLHttpRequest()
+  
+  xhr.timeout = 3000
+  xhr.responseType = 'text'
+  xhr.open('POST', url, true)
 
+  xhr.onload = function(e) { 
+    if(this.status === 200 || this.status === 304){
+      if (typeof callback === 'function') {
+        callback()
+      }
+    }
+  }
+  xhr.send(params)
 }
