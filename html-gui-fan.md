@@ -137,7 +137,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 
 原始表单提交会将表单元素的 name 属性值作为 key，特别是checkbox、radio含有多个选项的元素，如果不设置 name 会导致表单结果不正确；
 
-***错误：***
+❌ ***错误：***
 
 ```html
 <form>
@@ -147,7 +147,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </form>
 ```
 
-***正确：***
+✅ ***正确：***
 
 ```html
 <form>
@@ -163,7 +163,8 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 
 如果在某些情况下一定要在循环中使用 ID，**请保证 ID 的唯一性**
 
-*** 错误：***
+❌ *** 错误：***
+
 ```html
 <ul>
 	<% for (var i=0; i<list.length; i++) {% >
@@ -178,7 +179,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </template>
 ```
 
-*** 正确：***
+✅ *** 正确：***
 
 ```html
 <ul>
