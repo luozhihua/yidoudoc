@@ -125,11 +125,11 @@ if (foo = list.length && bar) {
 ✅ ***正确***
 
 ```javascript
-let foo
 let bar = true
 let list = []
+let foo = list.length
 
-if (foo = list.length && bar) {
+if (bar) {
   console.log(foo)
 } else {
   console.log(foo)
