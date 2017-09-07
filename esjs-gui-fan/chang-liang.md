@@ -65,6 +65,7 @@ export default {
 #### 2.2. 使用 npm 打包的项目统一使用 let 声明变量，禁止使用 var 声明变量
 
 ❌ ***错误***
+
 ```javascript
 export default function (list = []) {
   var userNames = []
