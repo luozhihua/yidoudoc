@@ -61,25 +61,50 @@ class Person {
  * 加载数据
  * @param {String} url 加载数据的 URL 地址
  * @param {Object} params 发送给服务器的数据
- * @param {Function} callback 加载成功后的回调函数
+ * @param {Function} onSuccess 加载成功后的回调函数
  */
-function load(url, params, callback) {
+function load(url, params, onSuccess, onError) {
   let xhr = new XMLHttpRequest()
   
   xhr.timeout = 3000
   xhr.responseType = 'text'
   xhr.open('POST', url, true)
 
+  xhr.ontimeout = function(e) { 
+    if (typeof onError === 'function') {
+      onError('timeout')
+    }
+  }
+  
+  xhr.onerror = function(e) { 
+    if (typeof onError === 'function') {
+      onError(e)
+    }
+  }
+  
   xhr.onload = function(e) { 
     if(this.status === 200 || this.status === 304){
-      if (typeof callback === 'function') {
-        callback()
+      if (typeof onSuccess === 'function') {
+        onSuccess()
       }
+    } else {
+      onError()
     }
   }
   xhr.send(params)
 }
 ```
+
+使用上方定义的 load 函数加载数据：
+
+```javascript
+load('/api/foo', {id: 'xxxx'}, function(text) {
+  console.log(`成功：${text}`)
+}, function(err) {
+  console.log(`失败：${text}`)
+})
+```
+
 
 ***正确***
 
@@ -91,14 +116,16 @@ function load(url, params, callback) {
 * @param {Object} params 发送给服务器的数据
 * @param {Function} callback 加载成功后的回调函数
 */
-function load(url, params, callback) {
-  let xhr = new XMLHttpRequest()
-  
-  xhr.timeout = 3000
-  xhr.responseType = 'text'
-  xhr.open('POST', url, true)
-  
+function load(url, params) {
   return new Promise((resolve, reject)=> {
+    let xhr = new XMLHttpRequest()
+    
+    xhr.timeout = 3000
+    xhr.responseType = 'text'
+    xhr.open('POST', url, true)
+
+    xhr.ontimeout = function(e) { reject('timeout error') }
+    xhr.onerror = function(e) { reject(e) }
     xhr.onload = function(e) {
       if(this.status === 200 || this.status === 304){
         resolve(xhr.responseText)
@@ -106,8 +133,6 @@ function load(url, params, callback) {
         reject()
       }
     }
-    xhr.ontimeout = function(e) { reject('timeout error') }
-    xhr.onerror = function(e) { reject(e) }
     xhr.send(params)
   }
 }
