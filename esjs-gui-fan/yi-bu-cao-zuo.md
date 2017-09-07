@@ -6,7 +6,7 @@
 
 #### 2. 🚫 禁止在 VueJS 中使用 jQuery 的 AJAX 请求
 
-VueJS 如果使用 jQuery 的get/post/等方法，将会导致用于检测登录超时等的 AJAX拦截器失效，也会导致返回数据
+VueJS 如果使用 jQuery 的get/post/等方法，将会导致用于检测登录超时等的 AJAX拦截器失效，也会导致返回数据结构有问题！
 
 #### 2. 异步操作尽量使用 async/await 
 
