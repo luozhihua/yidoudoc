@@ -67,7 +67,7 @@ class Person {
 
 使用callback会导致代码深层嵌套，逻辑混乱而复杂，同样也不兼容ES7的 async/await，要求使用 Promise 代替 callback
 
-***错误***
+❌ ***错误***
 
 ```javascript
 
@@ -132,7 +132,7 @@ load('/api/bar', function(bar) {
 ```
 
 
-***正确***
+✅ ***正确***
 
 ```javascript
 
@@ -169,12 +169,12 @@ function load(url, params) {
 ```javascript
 // 加载一个 URL
 load('/api/foo', {id: 'xxxx'})
-.then(response=> {
-  console.log('请求成功', response)
-})
-.catch(err=> {
-  console.log('请求失败', err)
-})
+  .then(response=> {
+    console.log('请求成功', response)
+  })
+  .catch(err=> {
+    console.log('请求失败', err)
+  })
 
 // 使用 await 调用 load 方法
 try {
@@ -193,7 +193,6 @@ Promise.all([
 ]).then(results => {
   let [foo, bar, baz, bat] = results
 })
-
 
 // 串行请求多个方法
 try {
