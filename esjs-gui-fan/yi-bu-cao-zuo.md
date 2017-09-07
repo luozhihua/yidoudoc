@@ -190,9 +190,13 @@ Promise.all([
   load('/api/bar'),
   load('/api/baz'),
   load('/api/bat'),
-]).then(results => {
-  let [foo, bar, baz, bat] = results
-})
+])
+  .then(results => {
+    let [foo, bar, baz, bat] = results
+  })
+  .catch(err=> {
+    console.log(err)
+  })
 
 // 串行请求多个方法
 try {
