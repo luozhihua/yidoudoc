@@ -38,7 +38,7 @@
 
 ❌ *** 错误：***
 
-- `views/clue/list.vue`
+- `views/clue/clue-list.vue`
 
 - `views/clue/edit-clue.vue`
 
