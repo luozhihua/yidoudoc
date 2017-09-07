@@ -162,7 +162,7 @@ load('/api/foo', {id: 'xxxx'})
   console.log('请求失败', err)
 })
 
-// 使用 await 
+// 使用 await 调用 load 方法
 try {
   let response = await load('/api/foo', {id: 'xxxx'})
   console.log(response)
