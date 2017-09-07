@@ -59,7 +59,9 @@ class Person {
 
 /**
  * 加载数据
- * 
+ * @param {String} url 加载数据的 URL 地址
+ * @param {Object} params 发送给服务器的数据
+ * @param {Function} callback 加载成功的回调函数
  */
 function load(url, params, callback) {
   let xhr = new XMLHttpRequest()
@@ -77,3 +79,4 @@ function load(url, params, callback) {
   }
   xhr.send(params)
 }
+```
