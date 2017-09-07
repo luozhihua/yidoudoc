@@ -2,14 +2,14 @@
 
 ##### 1. 禁止使用`new`关键字创建空数组和空对象
 
-***错误***
+❌ ***错误***
 
 ```javascript
 let list = new Array()
 let params = new Object()
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 
@@ -20,7 +20,7 @@ let params = {}
 
 #### 2. ES6中数组循环请使用 foreach
 
-***不推荐***
+👎 ***不推荐***
 
 ```javascript
 let list = [1, 2, 3, 4, 5]
@@ -30,7 +30,7 @@ for (let i = 0, len = list.length; i< len; i++) {
 }
 ```
 
-***推荐***
+👍 ***推荐***
 
 ```javascript
 let list = [1, 2, 3, 4, 5]
@@ -42,14 +42,14 @@ list.forEach((item, i)=>{
 
 #### 3. 字面对象的每一个属性占一行
 
-***错误***
+❌ ***错误***
 ```javascript
 
 let params = { id: 'xxx', age: 30, contry: 'CN'}
 
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 
@@ -79,7 +79,7 @@ Object.keys(params).forEach(key => {
 
 #### 5. ES6 中 对象和类的方法可以省略 function 关键字
 
-***不推荐***
+👎 ***不推荐***
 
 ```javascript
 const utils = {
@@ -89,7 +89,7 @@ const utils = {
 }
 ```
 
-***推荐***
+👍 ***推荐***
 
 ```javascript
 const utils = {
