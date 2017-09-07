@@ -2,7 +2,7 @@
 
 #### 1. `逗号` `===` `!==` `<` `>` `||` `&&` `+` `-` `*` `/`等操作符前后必须留一个空格
 
-***错误***
+❌ ***错误***
 
 ```javascript
 console.log(1,2,3,4)
@@ -17,7 +17,7 @@ if(variable>80&&age<18){...}
 let amount = product[0].price+product[1].price
 let difference = product[0].price-product[1].price
 ```
-***正确***
+✅ ***正确***
 
 ```javascript
 console.log(1, 2, 3, 4)
@@ -35,7 +35,8 @@ let difference = product[0].price - product[1].price
 
 #### 2 `if` `else` `switch` `while` `do while`等关键字与小括号、大括号之间留一个空格
 
-***错误***
+❌ ***错误***
+
 ```javascript
 if(typeof window.console !== 'undefined'){
   console.log(1)
@@ -67,7 +68,7 @@ do{
 }while(i<10)
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 if (typeof window.console !== 'undefined') {
@@ -103,7 +104,8 @@ do {
 
 #### 3. function、class的大括号之前必须留一个空格
 
-***错误***
+❌ ***错误***
+
 ```javascript
 function loadData(){
   this.$ajax.get('/api/xxx')
@@ -118,7 +120,7 @@ class Analysis{
 }
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 function loadData() {
@@ -136,7 +138,7 @@ class Analysis {
 
 #### 4. 函数和方法的参数之间必须留空格
 
-***错误***
+❌ ***错误***
 
 ```javascript
 
@@ -149,7 +151,7 @@ class Student extend Person {
 }
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 
