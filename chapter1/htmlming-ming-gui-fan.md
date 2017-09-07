@@ -2,7 +2,7 @@
 
 ## 1. HTML5 规范中声明的所有标签和属性名称统一使用小写
 
-*** 正确：***
+✅ *** 正确：***
 
 ```html
 <div class=”wrapper”></div>
@@ -11,7 +11,7 @@
 <section title=”foo”></section>
 ```
 
-*** 错误：*** 
+❌ *** 错误：*** 
 
 ```html
 <DIV class=”wrapper”></DIV> 
@@ -22,13 +22,13 @@
 
 ## 2. HTML5自定义属性，自定义属性统一加上“data-”前缀
 
-*** 正确： ***
+✅ *** 正确： ***
 
 ```html 
 <li data-price=“888”></li>
 ```
 
-*** 错误：***
+❌ *** 错误：***
 ```html
 <li price=”8888”></li>
 ```
