@@ -30,7 +30,7 @@ export default function () {
 ## 2. 变量
 #### 2.1. 所有变量必须先声明，后使用
 
-***错误****
+❌ ***错误****
 
 ```javascript
 export default {
@@ -46,7 +46,7 @@ export default {
 }
 ```
 
-***正确***
+✅ ***正确***
 
 ```javascript
 export default {
