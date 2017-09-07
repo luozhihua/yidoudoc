@@ -8,7 +8,7 @@
 
 VueJS 如果使用 jQuery 的get/post/等方法，将会导致用于检测登录超时等的 AJAX拦截器失效，也会导致返回数据结构有问题！
 
-#### 2. 异步操作尽量使用 async/await 
+#### 3. 异步操作尽量使用 async/await 
 
 ```javascript
 
@@ -49,11 +49,21 @@ export default {
 
 // 类方法
 class Person {
-
+  async loadProducts() {
+    let url = '/api/xxxx'
+    let response
+    
+    try {
+      response = await this.$ajax.get(url)
+      this.prosucts = response.data
+    } catch (error) {
+      console.log(error.message)
+    }    
+  }
 }
 ```
 
-#### 使用 Promise 代替 callback
+#### 4. 使用 Promise 代替 callback
 
 使用callback会导致代码深层嵌套，逻辑混乱而复杂，同样也不兼容ES7的 async/await，要求使用 Promise 代替 callback
 
