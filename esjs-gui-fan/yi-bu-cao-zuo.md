@@ -182,7 +182,11 @@ Promise.all([
 
 
 // 串行请求多个方法
-let foo = await load('/api/foo')
-let bar = await load('/api/bar')
-let baz = await load('/api/baz')
-let bat = await load('/api/bat')
+try {
+  let foo = await load('/api/foo')
+  let bar = await load('/api/bar')
+  let baz = await load('/api/baz')
+  let bat = await load('/api/bat')
+} catch (err) {
+  console.log(err)
+}
