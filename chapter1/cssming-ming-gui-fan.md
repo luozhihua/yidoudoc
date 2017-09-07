@@ -30,7 +30,7 @@
 
 能用 CSS 伪类实现的尽量用伪类实现，常见的状态：hover、focus、active、disabled、checked、hidden、visible、current，不要用类似 gray 表示disabled状态、blue表示current状态
 
-*** 建议：***
+👍***推荐：***
 
 ```html
 <div class=”wrapper hidden active checked”></div>
