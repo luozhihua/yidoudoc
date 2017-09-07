@@ -169,3 +169,20 @@ try {
 } catch(err) {
   console.log(err)
 }
+
+// 并行请求多个方法
+Promise.all([
+  load('/api/foo'),
+  load('/api/bar'),
+  load('/api/baz'),
+  load('/api/bat'),
+]).then(results => {
+  let [foo, bar, baz, bat] = results
+})
+
+
+// 串行请求多个方法
+let foo = await load('/api/foo')
+let bar = await load('/api/bar')
+let baz = await load('/api/baz')
+let bat = await load('/api/bat')
