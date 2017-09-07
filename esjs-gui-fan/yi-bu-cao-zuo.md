@@ -98,10 +98,22 @@ function load(url, params, onSuccess, onError) {
 使用上方定义的 load 函数加载数据：
 
 ```javascript
+// 加载一个 URL
 load('/api/foo', {id: 'xxxx'}, function(text) {
   console.log(`成功：${text}`)
 }, function(err) {
   console.log(`失败：${err}`)
+})
+
+// 加载多个 URL
+load('/api/bar', function(bar) {
+  load('/api/bat', function(bat) {
+    load('/api/baz', function(baz) {
+      load('/api/foo', function(baz) {
+          ... 
+      })
+    })
+  })
 })
 ```
 
