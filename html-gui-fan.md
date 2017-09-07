@@ -4,7 +4,8 @@
 
 ## 2. 使用语义化标签
 
-***错误：***
+❌ ***错误：***
+
 ```html
 <div class=”header”>
 	<div class=”title”></div>
@@ -17,7 +18,7 @@
 </div>
 ```
 
-*** 正确：***
+✅ *** 正确：***
 
 ```html
 <header>
@@ -33,12 +34,14 @@
 
 ## 3. 属性值必须使用双引号
 
-***错误：***
+❌ ***错误：***
+
 ```html
 <div id='user-list'></div>
 ```
 
-***正确***
+✅ ***正确***
+
 ```html
 <div id=”user-list”></div>
 ```
@@ -56,18 +59,18 @@
 </div>
 ```
 
-## 5. 禁止在 HTML 标签上写样式
+## 5. 🚫 禁止在 HTML 标签上写样式
 
 在 HTML 标签上写样式会很难维护和调试，Vue 组件中需要初始化的样式以:style=”styleObject”代替，styleObject 必须 在Vue组件中的data、computed或者 methods内定义为对象，把需要的样式全部至于其中；
 
-*** 错误：***
+❌ *** 错误：***
 
 ```html
 <div class=”clueDetails” style=”margin-bottom: 1rem; background-color: red;”></div>
 <VueComponent :style=”{ color: 'red', fontSize: '1.4rem'}”
 ```
 
-*** 正确：***
+✅ *** 正确：***
 
 ```html
 <template>
@@ -90,7 +93,7 @@ _如果样式是可以预知的，更好的做法是全部在 css 中定义，�
 
 Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属性的方式书写，但是因vue 组件的属性都是自定义属性，过长会造成阅读困难，超过两个建议每一个属性新启一行；
 
-***建议：***
+👍 ***建议：***
 
 ```html
 <product-selector v-if="cond.type==='product'"
@@ -102,11 +105,11 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </product-selector>
 ```
 
-## 7. 禁止在`行内标签`内嵌套`块状标签`
+## 7. 🚫 禁止在`行内标签`内嵌套`块状标签`
 
 行内标签嵌套块状标签会造成浏览器不能正确解析 HTML 树结构，代码编辑器也不能完美格式化。
 
-***错误：***
+❌ ***错误：***
 
 ```html
 <span>
@@ -118,7 +121,7 @@ Vue 组件的props、事件、directive（指令） 都是通过类似 HTML 属�
 </a>
 ```
 
-***正确：***
+✅ ***正确：***
 
 ```html
 <div>
