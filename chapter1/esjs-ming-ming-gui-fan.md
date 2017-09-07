@@ -4,7 +4,7 @@
 
 统一使用全大写，单词之间使用下划线连接，CONSTACT_NAME
 
-***实例：***
+👍 ***实例：***
 
 ```javascript
 const API_HOST = '192.168.1.1'
@@ -12,14 +12,14 @@ const API_HOST = '192.168.1.1'
 
 ## 2. 变量强制使用**小驼峰***（camelCased）
 
-***正确：***
+✅ ***正确：***
 
 ```javascript
 let onlineUsers = ['张三', '李四']
 let onlineUserList = ['张三', '李四']
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```javascript
 let OnlineUser = ['张三', '李四']
@@ -28,7 +28,7 @@ let online_user_list = ['张三', '李四']
 
 ## 3. 函数名、对象和类的方法名统一使用小驼峰（camelCased）
 
-***正确：***
+✅ ***正确：***
 
 ```javascript
 function getAllUsers(){
@@ -42,7 +42,7 @@ const user = {
 }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```javascript
 function get_all_users() {}
@@ -58,7 +58,7 @@ const user = {
 
 ## 4. 对象和类的属性名使用小驼峰（camelCased)
 
-***正确：***
+✅ ***正确：***
 
 ```javascript
 const user = {
@@ -82,7 +82,7 @@ class Clue extend Event {
 }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```javascript
 const user = {
@@ -111,7 +111,7 @@ class Clue extend Event {
 
 ## 5. 类名使用大驼峰（CamelCased）
 
-***正确：***
+✅ ***正确：***
 ```javascript
 
 class Distribution {
@@ -127,7 +127,7 @@ class UserCenter extend Event {
 }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```javascript
 
@@ -148,7 +148,7 @@ class userCenter extend Event {
 
 变量（函数）、类和对象的方法等，如果类型或者返回类型是 Boolean 的，名称加 is或 can前缀，类型是 Array的加 s 后缀或者 List 后缀
 
-***参考：***
+👍 ***推荐***
 
 ```javascript
 function isNumber(foo) {
