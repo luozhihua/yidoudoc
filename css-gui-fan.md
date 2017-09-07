@@ -106,7 +106,8 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
   </style>
 ```
 
-***正确：***
+✅ ***正确：***
+
 ```css
   .page {
     margin-right: auto;
@@ -115,7 +116,8 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
   .featured { border-color: #69c; }
 ```
 
-***错误：***
+❌ ***错误：***
+
 ```css
   .page { margin: 5px auto; }
   .featured { border: 1px solid #69c; }
@@ -123,7 +125,7 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
 
 ## 5. 每个规则集之间保留一个空行
 
-***正确：***
+✅ ***正确：***
 
 ```css
   .selector1 {  display: block; width: 100px; }
@@ -132,7 +134,7 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
   .another { color: red; }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```css
   .selector1 { display: block;  width: 100px; }
@@ -146,7 +148,7 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
 
 #### 6.1. CSS文本内容必须用双引号包围。
 
-***正确：***
+✅ ***正确：***
 
 ```css
   html[lang|="zh"] q:before {
@@ -155,7 +157,7 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
   }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```css
   html[lang|=zh] q:before {
@@ -166,13 +168,13 @@ border / margin / padding 等缩写会同时设置多个属性的值，容易覆
 
 #### 6.2. 当数值为 0 - 1 之间的小数时，省略整数部分的 0
 
-***正确：***
+✅ ***正确：***
 
 ```css
   panel { opacity: .8 }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```css
   panel { opacity: 0.8 }
@@ -195,14 +197,14 @@ vw      | 相对于浏览器可视区域的宽度，50vw等于屏幕宽度的一
 vh      | 相对于浏览器可视区域的高度，50vh等于屏幕高度的一半，100vh 等于整个屏幕的高度
 %       | 用于宽度、高度以及 padding,margin 时，基于具有固定尺寸的上级元素
 
-***错误：***
+❌ ***错误：***
 
 ```css
   h1 { font-size: 14px; }
   .dialog { width: 260px; }
 ```
 
-***正确：***
+✅ ***正确：***
 
 ```css
   h1 { font-size: 1.4rem; }
@@ -211,13 +213,13 @@ vh      | 相对于浏览器可视区域的高度，50vh等于屏幕高度的一
 
 #### 7.2. 数值为 0 时必须省略单位。
 
-***错误： ***
+❌ ***错误： ***
 
 ```css
   padding: 0px 5px;
 ```
 
-***正确：***
+✅ ***正确：***
 
 ```css
   padding: 0 5px;
@@ -227,7 +229,7 @@ vh      | 相对于浏览器可视区域的高度，50vh等于屏幕高度的一
 
 #### 8.1. RGB颜色值必须使用十六进制记号形式 #rrggbb，不允许使用 rgb()。
 
-***正确：***
+✅ ***正确：***
 
 ```css
   .success {
@@ -236,7 +238,7 @@ vh      | 相对于浏览器可视区域的高度，50vh等于屏幕高度的一
   }
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```css
   .success {
@@ -247,13 +249,13 @@ vh      | 相对于浏览器可视区域的高度，50vh等于屏幕高度的一
 
 #### 8.2. 颜色值可以缩写时，必须使用缩写形式。
 
-***正确：***
+✅ ***正确：***
 
 ```css
   background-color: #aca;
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```css
   background-color: #aaccaa;
@@ -261,26 +263,26 @@ vh      | 相对于浏览器可视区域的高度，50vh等于屏幕高度的一
 
 #### 8.3. 颜色值不允许使用颜色名称。
 
-***正确：***
+✅ ***正确：***
 ```css
   color: #90ee90;
 ```
 
-***错误：***
+❌ ***错误：***
 ```css
   color: lightgreen;
 ```
 
 #### 8.4. 颜色值中的英文字符统一小写。
 
-***正确：***
+✅ ***正确：***
 
 ```css
   background-color: #aca;
   color: #90ee90;
 ```
 
-***错误：***
+❌ ***错误：***
 
 ```csss
   background-color: #ACA;
