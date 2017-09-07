@@ -101,7 +101,7 @@ function load(url, params, onSuccess, onError) {
 load('/api/foo', {id: 'xxxx'}, function(text) {
   console.log(`成功：${text}`)
 }, function(err) {
-  console.log(`失败：${text}`)
+  console.log(`失败：${err}`)
 })
 ```
 
