@@ -161,3 +161,11 @@ load('/api/foo', {id: 'xxxx'})
 .catch(err=> {
   console.log('请求失败', err)
 })
+
+// 使用 await 
+try {
+  let response = await load('/api/foo', {id: 'xxxx'})
+  console.log(response)
+} catch(err) {
+  console.log(err)
+}
