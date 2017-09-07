@@ -42,7 +42,7 @@
 
 - `views/clue/edit-clue.vue`
 
-- `views/clue/add-clue.vue`
+- `views/clue/clue-add.vue`
 
 
 
